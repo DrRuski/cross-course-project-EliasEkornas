@@ -1,15 +1,25 @@
 header, footer, header a {
-    background-color: #333;
-    color: #eee;
+    background-color: #202020;
+    color: #fff;
 }
 
 main a {
-    background-color: red;
+    background-color: #BB0000;
     color: #eee;
     text-decoration: none;
-    padding: 10px;
-    margin: 10px;
+}
+
+.cta-button-green {
+    background-color: #127300;
+}
+
+.cta-big-red {
     border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 25px;
 }
 
 nav li {
@@ -17,3 +27,14 @@ nav li {
     
 }
 
+.reviews {
+    background-color: #E8E8E8;
+}
+
+.featured-guitars {
+    background-color: #FBFBFB;
+}
+
+footer {
+    text-align: center;
+}
