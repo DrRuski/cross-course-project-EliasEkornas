@@ -1,15 +1,20 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: "Boots And Spurs";
+    src: url("../fonts/BootsAndSpurs.ttf") format("truetype");
 }
 
-h1, h2 {
-    font-family: BootsAndSpurs;
+h1, h2, .logo {
+    font-family: "Boots And Spurs", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: Roboto;
 }
 
 header, footer, header a {
     background-color: #202020;
     color: #fff;
+    text-decoration: none;
 }
 
 main a {
