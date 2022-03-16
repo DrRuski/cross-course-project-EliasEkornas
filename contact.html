@@ -13,19 +13,33 @@
             <a href="index.html" class="logo">Guitar Kings</a>
             <nav>
                 <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="guitars.html">Guitars</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="guitars.html">Guitars</a></li>
+                  <li><a href="contact.html" class="current-contact">Contact</a></li>
                 </ul>
-            </nav>
+              </nav> 
         </header>
         <main>
             <section>
-            <h1>Contact</h1>
-            <form action="submit.php" method="post"></form>
-            <input type="text" name="firstname">
-            <input type="submit" value="Send">
-
+                    <h1>Contact Us</h1>
+                    <form action="submit.php" method="post">
+                        <label for="firstname">First Name</label><input type="text" name="firstname">
+                        <label for="email">Email</label><input type="text" name="firstname">
+                        <label for="guitars">Guitars</label>
+                        <select name="guitars" id="guitars">
+                        <option value="Blue-Guitar">Blue Guitar</option>
+                        <option value="Red-Guitar">Red Guitar</option>
+                        <option value="Yellow-Guitar">Yellow Guitar</option>
+                        <option value="Green-Guitar">Green Guitar</option>
+                    </select>
+                    <label for="newsletter">Sign up for newsletter.</label>
+                    <input type="checkbox" name="newsletter" value="newsletter" id="newsletter">
+                    <label for="textarea">Feedback</label>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send">
+                    </form>
+                
+                
 
 
 
