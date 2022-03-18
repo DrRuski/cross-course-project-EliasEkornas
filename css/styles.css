@@ -50,7 +50,6 @@ header, footer, header a {
     background-color: #202020;
     color: #fff;
     text-decoration: none;
-    min-height: 150px;
 }
 
 .landing-image {
@@ -83,13 +82,15 @@ header, footer, header a {
 
 main a {
     display: block;
+    text-align: center;
+    line-height: 38px;
     background-color: #BB0000;
     color: #eee;
     text-decoration: none;
     border-radius: 5px;
-    margin: 10px;
-    max-width: 100px;
-    text-align: center;
+    margin: 0px 0px 10px 0px;
+    min-height: 38px;
+    max-width: 110px;
 }
 
 .cta-button-green {
@@ -107,11 +108,7 @@ main a {
 
 nav li, nav a {
     display: inline;
-    padding: 10px;
-}
-
-nav ul {
-    padding: 0px;
+    padding: 0px 10px 0px 0px;
 }
 
 .reviews {
