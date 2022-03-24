@@ -14,7 +14,7 @@ body {
 }
 
 header input[type=text] {
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: #333;
     border-color: #FDC50A;
 }
@@ -75,8 +75,8 @@ input::placeholder {
     }
 
     header input[type=text] {
-        height: 50px;
-        width: 250px;
+        height: 44px;
+        width: 150px;
     }
 
     input::placeholder {
@@ -88,11 +88,11 @@ input::placeholder {
     display: flex;
     justify-content: space-around;
     padding: 0px;
-    margin: 15px 20px;
+    margin: 15px 10px;
     
 }
     .local-nav-container button {
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #eee;
     margin: 10px 0px;
@@ -107,6 +107,33 @@ input::placeholder {
 
 
 /* main */
+
+.home-page-images-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.home-page-images-container p {
+    margin: 5px 0px;
+}
+
+.home-page-images {
+    max-width: 100px;
+}
+
+.centre-image-container {
+    display: block;
+    text-align: center;
+}
+.centre-image {
+    max-width: 341px;
+}
+
+hr {
+    margin: 20px 15px;
+}
+
 /* footer */
     
 }
