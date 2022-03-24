@@ -27,13 +27,22 @@ body {
 
 
 /* Home page mobile styles */
-@media only screen and (max-width:390px) {
+@media only screen and (min-width:390px) {
     nav {
         display: none;
     }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    #hamburger-menu:checked ~ nav {
+        display: block;
+    }
+    
 }
 
 /* desktop styles */
-@media only screen and (min-width:800px) {
+@media only screen and (max-width:800px) {
 
 }
