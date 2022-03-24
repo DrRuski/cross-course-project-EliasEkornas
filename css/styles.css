@@ -9,15 +9,14 @@ header, footer {
     background-color: #333333;
 }
 body {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 
-
-
-
-
-
-
+input [type=text] {
+    border-radius: 10%;
+    width: 100%;
+    padding: 10px;
+}
 
 
 
@@ -35,6 +34,13 @@ body {
     nav {
         display: none;
     }
+    
+    nav a {
+        text-decoration: none;
+        color: #eee;
+    }
+    
+    header ul { list-style-type: none;}
 
     #hamburger-menu {
         display: none;
@@ -42,10 +48,32 @@ body {
 
     #hamburger-menu:checked ~ nav {
         display: block;
+        background-color: #333;
+        max-width: 125px;
     }
     label {
         color: #eee;
+        font-size: 2em;
     }
+    .test > * {
+        text-align: left;
+        padding: 5px 0px;
+        margin: 5px 0px;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .local-nav ul > * {
+        display: inline;
+    }
+    .local-nav button {
+        padding: 20px 5px;
+        text-align: center;
+    }
+
 
 
 /* main */
