@@ -94,14 +94,13 @@ input::placeholder {
     .local-nav-container button {
     padding: 10px;
     border-radius: 10px;
-    background-color: #eee;
+    background-color: transparent;
     margin: 10px 0px;
     border-color: #eee;
 }
 
     .local-nav-container i {
         display: block;
-        
     }
 
 
