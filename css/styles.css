@@ -74,8 +74,16 @@ input::placeholder {
         justify-content: space-around;
     }
 
+    header input[type=text] {
+        height: 50px;
+        width: 250px;
+    }
 
-    
+    input::placeholder {
+        font-size: 1.5em;
+        padding: 0px 0px 0px 15px;
+    }
+
     .local-nav-container ul {
     display: flex;
     justify-content: space-around;
