@@ -1,5 +1,9 @@
-/* Home page global styles */
+@font-family: 'Inter', sans-serif;
 
+/* Home page global styles */
+header, footer {
+    background-color: #333333;
+}
 
 
 
