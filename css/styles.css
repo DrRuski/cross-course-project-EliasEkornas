@@ -28,6 +28,8 @@ body {
 
 /* Home page mobile styles */
 @media only screen and (min-width:390px) {
+    
+/* header */    
     nav {
         display: none;
     }
@@ -39,10 +41,17 @@ body {
     #hamburger-menu:checked ~ nav {
         display: block;
     }
+    label {
+        color: #eee;
+    }
+
+
+/* main */
+/* footer */
     
 }
 
 /* desktop styles */
-@media only screen and (max-width:800px) {
+@media only screen and (min-width:800px) {
 
 }
