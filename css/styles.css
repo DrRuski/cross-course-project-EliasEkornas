@@ -10,14 +10,19 @@ header, footer {
 }
 body {
     font-family: "Roboto", sans-serif;
+    margin: 0px;
 }
 
-input [type=text] {
-    border-radius: 10%;
-    width: 100%;
-    padding: 10px;
+header input[type=text] {
+    border-radius: 10px;
+    background-color: #333;
+    border-color: #FDC50A;
 }
 
+input::placeholder {
+    color: #999;
+    font-size: 1.5em;
+}
 
 
 
@@ -55,13 +60,13 @@ input [type=text] {
         color: #eee;
         font-size: 2em;
     }
-    .test > * {
+    .main-nav > * {
         text-align: left;
         padding: 5px 0px;
         margin: 5px 0px;
     }
 
-    .main-nav {
+    .main-nav-container {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -70,8 +75,11 @@ input [type=text] {
         display: inline;
     }
     .local-nav button {
-        padding: 20px 5px;
-        text-align: center;
+        padding: 25px 10px;
+    }
+    .local-nav i {
+        display: block;
+        padding: 10px;
     }
 
 
