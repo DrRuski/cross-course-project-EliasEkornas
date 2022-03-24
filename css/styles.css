@@ -21,7 +21,9 @@ header input[type=text] {
 
 input::placeholder {
     color: #999;
-    font-size: 1.5em;
+}
+.local-nav-container {
+    background-color: #eee;
 }
 
 
@@ -71,15 +73,27 @@ input::placeholder {
         align-items: center;
         justify-content: space-around;
     }
-    .local-nav ul > * {
-        display: inline;
-    }
-    .local-nav button {
-        padding: 25px 10px;
-    }
-    .local-nav i {
+
+
+    
+    .local-nav-container ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 15px 20px;
+    
+}
+    .local-nav-container button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #eee;
+    margin: 10px 0px;
+    border-color: #eee;
+}
+
+    .local-nav-container i {
         display: block;
-        padding: 10px;
+        
     }
 
 
