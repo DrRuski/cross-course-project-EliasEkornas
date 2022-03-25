@@ -119,10 +119,10 @@ input::placeholder {
 .home-page-images-container {
     display: flex;
     justify-content: space-between;
-    margin: 10px 20px;
+    margin: 20px 20px;
 }
 
-.home-page-images-container h2 {
+.home-page-images-container h3 {
     margin: 0px;
     font-size: 1em;
 }
