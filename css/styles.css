@@ -27,6 +27,11 @@ input::placeholder {
     background-color: #eee;
 }
 
+.copyright {
+    text-align: center;
+    color: #eee;
+}
+
 
 
 
@@ -159,7 +164,11 @@ hr {
 }
 
 /* footer */
-    
+
+.copyright {
+    line-height: 100px;
+}
+
 }
 
 /* desktop styles */
