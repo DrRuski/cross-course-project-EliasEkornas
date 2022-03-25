@@ -116,6 +116,13 @@ input::placeholder {
 
 /* main */
 
+h2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1em;
+}
+
 .home-page-images-container {
     display: flex;
     justify-content: space-between;
