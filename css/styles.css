@@ -17,6 +17,7 @@ header input[type=text] {
     border-radius: 25px;
     background-color: #333;
     border-color: #FDC50A;
+    padding: 0px;
 }
 
 input::placeholder {
@@ -38,6 +39,13 @@ input::placeholder {
 @media only screen and (min-width:390px) {
     
 /* header */    
+
+    .logo {
+        max-width: 70px;
+        max-height: 50px;
+    }
+
+
     nav {
         display: none;
     }
@@ -70,8 +78,9 @@ input::placeholder {
 
     .main-nav-container {
         display: flex;
-        align-items: center;
         justify-content: space-around;
+        align-items: center;
+        padding: 10px 0px;
     }
 
     header input[type=text] {
@@ -91,16 +100,16 @@ input::placeholder {
     margin: 15px 10px;
     
 }
-    .local-nav-container button {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: transparent;
-    margin: 10px 0px;
-    border-color: #eee;
-}
 
-    .local-nav-container i {
-        display: block;
+    .local-nav-container a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 5px 0px;
+        text-decoration: none;
+        color: #333;
     }
 
 
@@ -113,8 +122,17 @@ input::placeholder {
     margin: 10px 20px;
 }
 
+.home-page-images-container h2 {
+    margin: 0px;
+    font-size: 1em;
+}
+
+
 .home-page-images-container p {
+    display: flex;
+    justify-content: space-between;
     margin: 5px 0px;
+    font-size: 0.7em;
 }
 
 .home-page-images {
