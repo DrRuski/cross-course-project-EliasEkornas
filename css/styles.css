@@ -137,6 +137,9 @@ nav a {
         font-size: 1em;
     }
 
+    .desktop-additional-products {
+        display: none;
+    }
 
     .home-page-images-container p {
         display: flex;
@@ -176,7 +179,7 @@ nav a {
     .logo-desktop {
         max-width: 70px;
         max-height: 50px;
-        padding: 0px;
+        padding: 20px;
     }
     
     .main-nav-container label {
@@ -188,6 +191,7 @@ nav a {
         justify-content: center;
         align-items: center;
         height: 80px;
+        
     }
 
     .main-nav {
@@ -215,9 +219,71 @@ nav a {
         height: 35px;
     }
 
-
+    .local-nav-container ul {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        margin: 15px 10px;
+        gap: 10px;
+        
+    }
     
+    .local-nav-container a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 5px 0px;
+        text-decoration: none;
+        color: #333;
+        }
 
+/* main */
+
+h2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+}
+    
+.home-page-images-container {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 50px 25px;
+    justify-content: center;
+    margin: 25px 0px;
+     
+}
+
+.home-page-images-container h3 {
+    margin: 0px;
+    font-size: 1em;
+}
+
+.home-page-images-container p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    font-size: 0.7em;
+}
+
+.home-page-images {
+    max-width: 150px;
+}
+
+.centre-image-container {
+    display: block;
+    text-align: center;
+}
+.centre-image {
+    max-width: 1000px;
+}
+
+hr {
+    margin: 20px 15px;
+}
 
 
 
