@@ -187,16 +187,14 @@ nav a {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80px;
-        gap: 0px 100px;
-        
+        gap: 50px;
     }
 
     .main-nav {
         display: flex;
         align-items: center;
         gap: 0px 20px;
-        padding: 0px;
+        padding: 10px;
     }
 
     .main-nav a {
