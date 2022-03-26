@@ -203,8 +203,11 @@ nav a {
         justify-content: center;
         align-items: center;
         padding: 10px;
-        margin: 5px 0px;
 }
+
+    .main-nav i {
+        padding: 10px;
+    }
 
     .search-mobile {
         display: none;
@@ -280,13 +283,6 @@ h2 {
 hr {
     margin: 20px 15px;
 }
-
-
-
-
-
-
-
 
 
 
