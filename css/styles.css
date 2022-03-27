@@ -40,6 +40,13 @@ nav a {
     color: #FDC50A;
 }
 
+.current-sport, .current-fighting, .current-simulator, .current-rpg, .current-fps, .current-vr  {
+    font-weight: bold;
+    background-color: #FDC50A;
+    border-radius: 5px;
+    
+}
+
 .local-nav-container {
     background-color: #eee;
 }
