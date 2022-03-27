@@ -35,6 +35,11 @@ nav a {
     color: #eee;
 }
 
+.current-home, .current-library, .current-cart, .current-account {
+    font-weight: bold;
+    color: #FDC50A;
+}
+
 .local-nav-container {
     background-color: #eee;
 }
@@ -188,10 +193,6 @@ nav a {
         display: none;
     }
 
-    .current-home, .current-library, .current-cart, .current-account {
-        font-weight: bold;
-        color: #FDC50A;
-    }
 
     .main-nav-container {
         display: flex;
