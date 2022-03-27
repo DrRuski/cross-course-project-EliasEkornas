@@ -188,6 +188,11 @@ nav a {
         display: none;
     }
 
+    .current-home, .current-library, .current-cart, .current-account {
+        font-weight: bold;
+        color: #FDC50A;
+    }
+
     .main-nav-container {
         display: flex;
         justify-content: center;
