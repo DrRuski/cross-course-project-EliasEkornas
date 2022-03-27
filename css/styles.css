@@ -11,6 +11,7 @@ body {
     margin: 0px;
 }
 
+/* header */
 header, footer {
     background-color: #333333;
 }
@@ -49,6 +50,8 @@ nav a {
 .local-nav-container {
     background-color: #eee;
 }
+
+/* footer */
 
 .copyright {
     text-align: center;
@@ -300,7 +303,5 @@ h2 {
 hr {
     margin: 20px 15px;
 }
-
-
 
 }
