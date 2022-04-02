@@ -15,6 +15,12 @@ footer {grid-area: footer;}
 
 
 body {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "nav nav"
+    "footer footer";
     margin: 0px;
 }
 
@@ -93,27 +99,8 @@ nav a {
 }
 
 
-
-
-
-
-
-
-
-
-
-/* Home page mobile styles */
-@media only screen and (max-width:699px)  {
     
-    body {
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "nav nav"
-        "footer footer";
-        margin: 0px;
-    }
+    
     
 
     /* Main-Mobile-Nav */
@@ -124,21 +111,8 @@ nav a {
 
 
 
-
-   
-
-
-
-
     /* Local-Nav */
 
-
-
-
-
-
-
-   
 
 
 
@@ -170,7 +144,7 @@ main h3 {
 
 
 
-}
+
 
 
 
