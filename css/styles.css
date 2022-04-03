@@ -13,6 +13,9 @@ nav {grid-area: nav;}
 main {grid-area: main;}
 footer {grid-area: footer;}
 
+
+
+@media only screen and (max-width:699px) {
 body {
     font-family: "Inter";
     display: grid;
@@ -27,12 +30,46 @@ body {
 
 /* Main-Nav */
 
+.desktop-additional-products {
+    display: none;
+}
+
+.main-nav-container {
+    height: 70px;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.main-nav-container a {
+    display: grid;
+    text-align: center;
+    color: #eee;
+    text-decoration: none;
+    gap: 2px;
+    font-size: 0.9em;
+    padding: 10px 5px;
+}
+
+#current-home, #current-library, #current-cart, #current-account {
+    color: #FDC50A;
+    font-weight: bold;
+}
 
 
-/* Header */
 
+/* Header - Local-Nav */
 
-/* Local-Nav */
+.search-container {
+    width: 100%;
+    text-align: center;
+}
 
 .search-mobile {
     border-radius: 20px;
@@ -53,13 +90,13 @@ input::placeholder {
     display: grid;
     grid-template-rows: 1fr 1fr;
     background-color: #eee;
-    justify-items: center;
     align-items: center;
 }
 
 .local-nav-menu {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    margin: 0px 10px;
 }
 .local-nav-menu a {
     color: #333;
@@ -71,23 +108,19 @@ input::placeholder {
     padding: 10px 5px;
 }
 
+/* Local-Nav Active */
+
+.current-sport {
+    background-color: #FDC50A;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #ccc;
+    
+}
 
 
 
 
     
-    
-    
-
-   
-
-   
-    
-
-
-
-  
-
 
 
 
@@ -97,6 +130,7 @@ main h2 {
     font-size: 1em;
     text-align: center;
     padding: 10px;
+    margin: 5px;
 }
 
 main h3, main p {
@@ -104,11 +138,15 @@ main h3, main p {
     margin: 5px 0px;
 }
 
+.home-page-images-container i {
+    color: #3FA535;
+}
+
 .home-page-images-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin: 10px;
+    margin: 5px 20px 15px 20px;
 }
 
 .home-page-images, .promotional-image {
@@ -131,7 +169,7 @@ main h3, main p {
 }
 
 
-
+}
 
 
 
@@ -146,12 +184,48 @@ main h3, main p {
 /* desktop styles */
 @media only screen and (min-width:700px) {
 
-
+    body {
+        font-family: "Inter";
+        display: grid;
+        grid-template-areas:
+        "nav nav"
+        "header header"
+        "main main"
+        "footer footer";
+        margin: 0px;
+    }
 
 
 /* header */ 
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main */  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -167,4 +241,4 @@ main h3, main p {
 
 
 
-/* main */
+
