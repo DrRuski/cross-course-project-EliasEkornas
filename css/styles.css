@@ -30,6 +30,10 @@ body {
 
 /* Main-Nav */
 
+.logo-desktop {
+    display: none;
+}
+
 .desktop-additional-products {
     display: none;
 }
@@ -318,7 +322,7 @@ main h3, main p {
 
 .home-page-images-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -339,7 +343,14 @@ main h3, main p {
 }
 
 
+/* Footer */
 
+.copyright {
+    text-align: center;
+    color: #eee;
+    line-height: 100px;
+    background-color: #333;
+}
 
 
 
