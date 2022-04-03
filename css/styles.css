@@ -149,9 +149,15 @@ main h3, main p {
     margin: 5px 20px 15px 20px;
 }
 
-.home-page-images, .promotional-image {
+.home-page-images {
     width: 100%;
     margin: auto;
+}
+.promotional-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 
@@ -213,11 +219,43 @@ main h3, main p {
 
 /* main */  
 
+main h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+main h3, main p {
+    font-size: 1em;
+    margin: 5px 0px;
+}
+
+.home-page-images-container i {
+    color: #3FA535;
+}
+
+.home-page-images-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+}
+
+.home-page-images {
+    width: 100%;
+    margin: auto;
+}
 
 
-
-
-
+.promotional-image {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;
+}
 
 
 
