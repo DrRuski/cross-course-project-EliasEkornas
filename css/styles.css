@@ -6,30 +6,58 @@
 
 /* Global styles */
 
-img {
-    width: 100%;
-}
-
-/* Grid Template */
-
 header {grid-area: header;}
 nav {grid-area: nav;}
 main {grid-area: main;}
 footer {grid-area: footer;}
+
+body {
+    margin: 0px;
+    font-family: "Inter";
+}
+
+#current-home, #current-library, #current-cart, #current-account {
+    color: #FDC50A;
+    font-weight: bold;
+}
+
+.search-container {
+    width: 100%;
+    text-align: center;
+}
+
+.search-mobile {
+    border-radius: 20px;
+    width: 300px;
+    height: 2.3em;
+    margin: 15px 0px 0px 0px;
+    border-color: #FDC50A;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: #777;
+    font-size: 1.3em;
+}
+
+.current-sport {
+    background-color: #FDC50A;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #ccc; 
+}
+
 
 
 
 @media only screen and (max-width:699px) {
 
     body {
-    font-family: "Inter";
     display: grid;
     grid-template-areas: 
     "header header"
     "main main"
     "nav nav"
     "footer footer";
-    margin: 0px;
 }
 
 
@@ -50,9 +78,6 @@ footer {grid-area: footer;}
     align-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    position: fixed;
-    bottom: 0;    
 }
 
 .main-nav-container a {
@@ -65,31 +90,9 @@ footer {grid-area: footer;}
     padding: 10px 5px;
 }
 
-#current-home, #current-library, #current-cart, #current-account {
-    color: #FDC50A;
-    font-weight: bold;
-}
-
 
 /* Local-Nav - Home */
-.search-container {
-    width: 100%;
-    text-align: center;
-}
 
-.search-mobile {
-    border-radius: 20px;
-    width: 300px;
-    height: 2.3em;
-    margin: 15px 0px 0px 0px;
-    border-color: #FDC50A;
-    background-color: transparent;
-}
-
-input::placeholder {
-    color: #777;
-    font-size: 1.3em;
-}
 
 .local-nav-container {
     height: 120px;
@@ -114,12 +117,6 @@ input::placeholder {
     padding: 10px 5px;
 }
 
-.current-sport {
-    background-color: #FDC50A;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px #ccc;
-    
-}
 
 
 /* Local-Nav - Library */
@@ -257,7 +254,6 @@ h2 i {
 @media only screen and (min-width:700px) {
 
     body {
-        font-family: "Inter";
         display: grid;
         grid-template-columns: 1fr 2fr 2fr 1fr;
         grid-template-areas:
@@ -265,7 +261,6 @@ h2 i {
         "header header header header"
         ". main main ."
         "footer footer footer footer";
-        margin: 0px;
     }
 
 
@@ -291,33 +286,9 @@ h2 i {
     padding: 10px 5px;
 }
 
-#current-home, #current-library, #current-cart, #current-account {
-    color: #FDC50A;
-    font-weight: bold;
-}
-
 
 
 /* Local-Nav - Home */ 
-
-.search-container {
-    width: 100%;
-    text-align: center;
-}
-
-.search-mobile {
-    border-radius: 20px;
-    width: 300px;
-    height: 2.3em;
-    margin: 15px 0px 0px 0px;
-    border-color: #FDC50A;
-    background-color: transparent;
-}
-
-input::placeholder {
-    color: #777;
-    font-size: 1.3em;
-}
 
 .local-nav-container {
     height: 120px;
@@ -341,13 +312,6 @@ input::placeholder {
     text-decoration: none;
     font-size: 0.8em;
     padding: 10px 5px;
-}
-
-.current-sport {
-    background-color: #FDC50A;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px #ccc;
-    
 }
 
 
@@ -478,13 +442,3 @@ main h3, main p {
 
 
 }
-
-
-
-
-
-
-
-
-
-
