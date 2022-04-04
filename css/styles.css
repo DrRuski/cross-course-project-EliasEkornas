@@ -220,9 +220,11 @@ h2 i {
     place-self: start;
 }
 
+/* Main - Product Page */
 
-
-
+#windows {
+    display: none;
+}
 
 
 /* Footer */
