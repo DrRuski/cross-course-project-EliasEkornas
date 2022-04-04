@@ -6,6 +6,10 @@
 
 /* Global styles */
 
+img {
+    width: 100%;
+}
+
 /* Grid Template */
 
 header {grid-area: header;}
