@@ -194,7 +194,7 @@ h2 i {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0px 15px;
-    gap: 5px;
+    gap: 25px 5px;
     align-items: center;
 }
 
