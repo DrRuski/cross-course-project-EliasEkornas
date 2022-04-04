@@ -221,13 +221,35 @@ h2 i {
     place-self: start;
 }
 
+
+
+
+
 /* Main - Product Page */
 
-#windows {
+#windows, #xbox, #playbox, #playstation {
     display: none;
 }
 
+.platform {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin: 15px 0px;
+}
 
+.platform label {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #FDC50A;
+    border-radius: 20px;
+}
+
+label::after {
+    content: "";
+    display: block;
+}
 /* Footer */
 
 .copyright {
