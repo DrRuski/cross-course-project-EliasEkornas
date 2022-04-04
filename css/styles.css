@@ -413,6 +413,12 @@ main h3, main p {
    width: 100%;
 }
 
+.buy-button {
+    padding: 5px 15px;
+    background-color: #FDC50A;
+    border-radius: 20px;
+    text-decoration: none;
+}
 
 /* Main - Library */
 
