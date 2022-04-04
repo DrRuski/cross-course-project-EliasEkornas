@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Buy or sell new and used games with GameHub.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/e338dcafec.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<title>GameHub | Cart</title>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav-container">
+            <img class="logo-desktop" src="images/Logo.png" alt="GameHub Logo">
+            <a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            <a href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
+            <a id="current-cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            <a href="account.html"><i class="fa-solid fa-user"></i> Account</a>
+        </div>
+    </nav>
+    <header>
+        <section class="local-nav-container">
+            <div class="search-container">
+                <input class="search-mobile" type="text" name="search" placeholder="Search">
+            </div>
+            <div class="local-nav-menu">
+                <a class="current-sport" href=""><i class="fa-solid fa-baseball-bat-ball"></i>Sport</a>
+                <a class="current-fighting" href=""><i class="fa-solid fa-user-ninja"></i>Fighting</a>
+                <a class="current-simulator" href=""><i class="fa-solid fa-plane-departure"></i>Simulator</a>
+                <a class="current-rpg" href=""><i class="fa-brands fa-d-and-d"></i>RPG</a>
+                <a class="current-fps" href=""><i class="fa-solid fa-person-rifle"></i></i>FPS</a></li>
+                <a class="current-vr" href=""><i class="fa-solid fa-vr-cardboard"></i>VR</a>
+            </div>
+        </section>
+        </header>
+    
+<main>
+
+
+</main>
+
+
+<footer class="copyright">Copyright &copy;</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>

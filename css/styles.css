@@ -67,11 +67,7 @@ footer {grid-area: footer;}
 }
 
 
-
-/* Header - Local-Nav */
-
-
-/* Home */
+/* Local-Nav - Home */
 .search-container {
     width: 100%;
     text-align: center;
@@ -114,7 +110,6 @@ input::placeholder {
     padding: 10px 5px;
 }
 
-/* Local-Nav Active */
 .current-sport {
     background-color: #FDC50A;
     border-radius: 5px;
@@ -123,7 +118,7 @@ input::placeholder {
 }
 
 
-/* Library */
+/* Local-Nav - Library */
 .content-switcher {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -156,7 +151,7 @@ main h2 {
 
 main h3, main p {
     font-size: 0.8em;
-    margin: 5px 0px;
+    margin: 5px 0px 10px 0px;
 }
 
 h2 i {
@@ -186,35 +181,44 @@ h2 i {
     width: 90%;
 }
 
+.buy-button {
+    padding: 5px 15px;
+    background-color: #FDC50A;
+    border-radius: 20px;
+    text-decoration: none;
+}
 
 
 /* Main - Library */
 
-.your-games-info-text {
+.your-games-container {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 0px 15px;
+}
+
+.your-games-product-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px 15px;
-    gap: 25px 5px;
+    gap: 0px 10px;
     align-items: center;
+}
+
+.your-games-product-container a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #FDC50A;
+    color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 .game-description-text {
     place-self: start;
 }
-
-.your-games-info-text a {
-    text-align: center;
-    text-decoration: none;
-    background-color: #FDC50A;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 10px;
-    font-size: 0.7em;
-    font-weight: bold;
-}
-
-
-
 
 
 
@@ -262,8 +266,6 @@ h2 i {
 
 /* Main-Nav */
 
-
-
 .main-nav-container {
     height: 70px;
     justify-items: center;
@@ -290,7 +292,7 @@ h2 i {
 
 
 
-/* Header - Local-Nav */ 
+/* Local-Nav - Home */ 
 
 .search-container {
     width: 100%;
@@ -317,7 +319,7 @@ input::placeholder {
     grid-template-rows: 1fr 1fr;
     background-color: #eee;
     align-items: center;
-    justify-content: center;
+   justify-content: center;
 }
 
 .local-nav-menu {
@@ -335,8 +337,6 @@ input::placeholder {
     padding: 10px 5px;
 }
 
-/* Local-Nav Active */
-
 .current-sport {
     background-color: #FDC50A;
     border-radius: 5px;
@@ -345,12 +345,30 @@ input::placeholder {
 }
 
 
+/* Local-Nav - Library */
+
+.content-switcher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 25px;
+}
+
+.content-switcher a {
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+}
+.your-games {
+    background-color: #FDC50A;
+}
 
 
 
-
-
-/* Main */  
+/* Main - Home */  
 
 main h2 {
     font-size: 2em;
@@ -394,6 +412,39 @@ main h3, main p {
    margin-right: auto;
    width: 100%;
 }
+
+
+/* Main - Library */
+
+.your-games-container {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 0px 15px;
+}
+
+.your-games-product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 10px;
+    align-items: center;
+}
+
+.your-games-product-container a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #FDC50A;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.game-description-text {
+    place-self: start;
+}
+
+
 
 
 /* Footer */
