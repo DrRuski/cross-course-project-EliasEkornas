@@ -16,7 +16,8 @@ footer {grid-area: footer;}
 
 
 @media only screen and (max-width:699px) {
-body {
+
+    body {
     font-family: "Inter";
     display: grid;
     grid-template-areas: 
@@ -47,8 +48,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     position: fixed;
-    bottom: 0;
-    
+    bottom: 0;    
 }
 
 .main-nav-container a {
@@ -70,6 +70,8 @@ body {
 
 /* Header - Local-Nav */
 
+
+/* Home */
 .search-container {
     width: 100%;
     text-align: center;
@@ -113,7 +115,6 @@ input::placeholder {
 }
 
 /* Local-Nav Active */
-
 .current-sport {
     background-color: #FDC50A;
     border-radius: 5px;
@@ -122,13 +123,29 @@ input::placeholder {
 }
 
 
+/* Library */
+.content-switcher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 25px;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 25px;
+}
+
+.content-switcher a {
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+}
+.your-games {
+    background-color: #FDC50A;
+}
 
 
-    
-
-
-
-/* Main */
+/* Main - Home */
 
 main h2 {
     font-size: 1em;
@@ -140,6 +157,11 @@ main h2 {
 main h3, main p {
     font-size: 0.8em;
     margin: 5px 0px;
+}
+
+h2 i {
+    margin: 0px 25px;
+    color: #E84545;
 }
 
 .home-page-images-container i {
@@ -166,7 +188,26 @@ main h3, main p {
 
 
 
+/* Main - Library */
 
+.your-games-info-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 15px;
+    gap: 5px;
+    align-items: center;
+}
+
+.your-games-info-text a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #FDC50A;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
 
 
 /* Footer */
@@ -191,7 +232,7 @@ main h3, main p {
 
 
 
-/* desktop styles */
+/* DESKTOP STYLES */
 @media only screen and (min-width:700px) {
 
     body {
@@ -298,7 +339,7 @@ input::placeholder {
 
 
 
-/* main */  
+/* Main */  
 
 main h2 {
     font-size: 2em;

@@ -12,3 +12,6 @@ I used <gird> and <grid-area> element(s) on the body to structure the layout of 
 <Grid> It appears that to make transparent edges for elements i would have to make maybe a <div> element that would work as a <grid> container without any content inside, it would mainly just be there to press the content into the middle? Need further investigation. (I did this with the main-nav were i had <img of logo> followed by 4 buttons, the grid-column structure would then be:
 5fr (for the logo) 1fr 1fr 1fr 1fr (for the links) 5fr (no content)).
 
+Day 2 (Start 04.04.22 / 11.00 CET | End 18.00 CET)
+
+I started the day with making the "Library" page and the first thing on the agenda was to produce a content switcher, but initial thought was to do so with the <inpuit radio> tag but after several trials and tribulation and discovered that an easier way was to just make 2 anchor tags which i could copy from my home page local nav and make a few small tweakes.
