@@ -198,6 +198,10 @@ h2 i {
     align-items: center;
 }
 
+.game-description-text {
+    place-self: start;
+}
+
 .your-games-info-text a {
     text-align: center;
     text-decoration: none;
@@ -208,6 +212,13 @@ h2 i {
     font-size: 0.7em;
     font-weight: bold;
 }
+
+
+
+
+
+
+
 
 
 /* Footer */
