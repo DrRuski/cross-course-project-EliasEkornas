@@ -46,7 +46,17 @@ input::placeholder {
     box-shadow: 1px 1px 3px #ccc; 
 }
 
+/* Main - Product Page */
 
+.main-platform-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-platform-container h2 {
+    justify-self: left;
+    align-self: center;
+}
 
 
 @media only screen and (max-width:699px) {
@@ -54,10 +64,10 @@ input::placeholder {
     body {
     display: grid;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "nav nav"
-    "footer footer";
+    "header"
+    "main"
+    "nav"
+    "footer";
 }
 
 
@@ -227,29 +237,45 @@ h2 i {
 
 /* Main - Product Page */
 
-#windows, #xbox, #playbox, #playstation {
-    display: none;
-}
 
-.platform {
+.platform-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    text-align: center;
-    margin: 15px 0px;
+    margin: 0px 10px;
+    gap: 0px 10px;
 }
 
-.platform label {
+.platform-container label {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px 0px;
+}
+
+.platform-container input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0px;
+}
+
+.platform-container label {
+    border-radius: 3px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 1px;
     font-size: 0.8em;
-    font-weight: bold;
-    padding: 10px;
-    background-color: #FDC50A;
-    border-radius: 20px;
+    padding: 20px 10px;
+    text-align: center;
 }
 
-label::after {
-    content: "";
-    display: block;
+
+.platform-container input[type="radio"]:checked + label {
+    border: 2px solid #FDC50A;
+    color: #333;
+    background-color: #FDC50A;
+    font-weight: bold;
 }
+
+
+
 /* Footer */
 
 .copyright {
@@ -275,15 +301,10 @@ label::after {
 /* DESKTOP STYLES */
 @media only screen and (min-width:700px) {
 
-    body {
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr 1fr;
-        grid-template-areas:
-        "nav nav nav nav"
-        "header header header header"
-        ". main main ."
-        "footer footer footer footer";
-    }
+main {
+    max-width: 1000px;
+    margin: auto;
+}
 
 
 
@@ -442,6 +463,14 @@ main h3, main p {
     place-self: start;
 }
 
+
+
+/* Main - Product Page */
+
+.platform-container label:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 3px;
+}
 
 
 
