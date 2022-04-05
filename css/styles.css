@@ -284,17 +284,6 @@ h2 i {
 }
 
 
-
-/* Footer */
-
-.copyright {
-    text-align: center;
-    color: #eee;
-    line-height: 100px;
-    background-color: #333;
-}
-
-
 }
 
 
@@ -485,12 +474,7 @@ main h3, main p {
 
 /* Footer */
 
-.copyright {
-    text-align: center;
-    color: #eee;
-    line-height: 100px;
-    background-color: #333;
-}
+
 
 
 
