@@ -50,7 +50,6 @@ input::placeholder {
 
 /* Main - Home */  
 
-
 .home-page-images {
     width: 100%;
     margin: auto;
@@ -265,8 +264,6 @@ h2 i {
     color: #E84545;
 }
 
-
-
 .home-page-images-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -295,21 +292,13 @@ h2 i {
     width: 90%;
 }
 
-
-
-
-
-
-
-
-
 /* Main - Library */
 
 .your-games-container {
     display: grid;
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
-    margin: 0px 15px;
+    margin: 15px;
 }
 
 .your-games-product-container {
@@ -333,10 +322,6 @@ h2 i {
 .game-description-text {
     place-self: start;
 }
-
-
-
-
 
 /* Main - Product Page */
 
@@ -366,6 +351,40 @@ h2 i {
 .additional-desktop-description {
     display: none;
 }
+
+/* Main - Cart */
+
+.breadcrumb {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-cart-container {
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    margin: 0px 10px;
+}
+
+.cart-description-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.delivery-and-payment-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+
+
+
+
+
 
 
 
