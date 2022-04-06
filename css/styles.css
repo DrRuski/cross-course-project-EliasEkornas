@@ -380,6 +380,12 @@ h2 i {
     border-radius: 5px;
 }
 
+.order-info-container div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+}
 
 
 
