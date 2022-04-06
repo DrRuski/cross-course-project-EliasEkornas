@@ -53,10 +53,71 @@ input::placeholder {
     grid-template-rows: 1fr 1fr;
 }
 
+.main-platform-container select {
+    text-align: center;
+    align-self: center;
+    max-width: 340px;
+    margin: 0px 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px;
+    font-size: 1em;
+}
+
 .main-platform-container h2 {
     justify-self: left;
     align-self: center;
+    margin: 10px 0px;
 }
+
+
+
+.platform-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 10px;
+    gap: 0px 10px;
+}
+
+.platform-container label {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px 0px;
+}
+
+.platform-container input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0px;
+}
+
+.platform-container label {
+    border-radius: 3px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 1px;
+    font-size: 0.8em;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
+.platform-container input[type="radio"]:checked + label {
+    border: 2px solid #FDC50A;
+    color: #333;
+    background-color: #FDC50A;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */
@@ -66,6 +127,12 @@ input::placeholder {
     line-height: 100px;
     background-color: #333;
 }
+
+
+
+
+
+
 
 
 @media only screen and (max-width:699px) {
@@ -79,6 +146,11 @@ input::placeholder {
     "footer";
 }
 
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 /* Main-Nav */
 
@@ -246,42 +318,11 @@ h2 i {
 
 /* Main - Product Page */
 
-
-.platform-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0px 10px;
-    gap: 0px 10px;
+.product-text {
+    max-width: 340px;
+    margin: auto;
 }
 
-.platform-container label {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 2px 0px;
-}
-
-.platform-container input[type="radio"] {
-    opacity: 0;
-    position: fixed;
-    width: 0px;
-}
-
-.platform-container label {
-    border-radius: 3px;
-    border: 1px solid #eee;
-    box-shadow: 1px 1px 1px;
-    font-size: 0.8em;
-    padding: 20px 10px;
-    text-align: center;
-}
-
-
-.platform-container input[type="radio"]:checked + label {
-    border: 2px solid #FDC50A;
-    color: #333;
-    background-color: #FDC50A;
-    font-weight: bold;
-}
 
 
 }
@@ -304,7 +345,10 @@ main {
     margin: auto;
 }
 
-
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
 
 /* Main-Nav */
 
@@ -469,8 +513,6 @@ main h3, main p {
     cursor: pointer;
     box-shadow: 3px 3px 3px;
 }
-
-
 
 /* Footer */
 
