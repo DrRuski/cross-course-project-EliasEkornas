@@ -152,6 +152,15 @@ input::placeholder {
     grid-template-rows: 1fr 1fr 2fr;
 }
 
+.quiantity label::after {
+    content: "";
+    display: block;
+}
+.quiantity label {
+    font-size: 1em;
+    font-weight: bold;
+}
+
 
 /* Footer */
 .copyright {
@@ -396,12 +405,14 @@ h2 i {
     color: #333;
 }
 
+
 .order-info-container {
     background-color: #eee;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     border-radius: 5px;
 }
+
 
 .order-info-container div {
     display: grid;
@@ -427,6 +438,10 @@ h2 i {
 .cart-cta a {
     color: #FDC50A;
     text-decoration: none;
+}
+
+.cart-text-format h2 {
+    text-align: left;
 }
 
 .cart-text-format h3, .cart-text-format h4 {
