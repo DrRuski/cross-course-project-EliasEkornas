@@ -166,10 +166,13 @@ input::placeholder {
 
 /* Footer */
 .copyright {
+    height: 30px;
     text-align: center;
     color: #eee;
-    line-height: 100px;
+    line-height: 30px;
     background-color: #333;
+   
+    
 }
 
 
@@ -336,6 +339,7 @@ h2 i {
     align-items: center;
 }
 
+.desktop {display: none;}
 
 .game-description-text {
     place-self: start;
@@ -434,14 +438,14 @@ h2 i {
     color: #FDC50A;
     border: 1px solid #FDC50A;
     border-radius: 5px;
-    margin: 10px auto;
-   
+    margin: 10px auto;   
 }
 
 .cart-cta a {
     color: #FDC50A;
     text-decoration: none;
 }
+
 
 .cart-text-format h2 {
     text-align: left;
@@ -462,11 +466,10 @@ h2 i {
 
 .account-container {
     display: grid;
-    grid-template-rows: auto auto auto 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr auto 1fr;
     align-items: center;
     justify-items: center;
     margin: 0px 15px;
-    gap: 0px 5px;
 }
 
 
@@ -490,7 +493,7 @@ h2 i {
 
 .create-account-main-container {
     display: grid;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     margin: 0px 15px;
 }
 .form-container form {
@@ -507,7 +510,18 @@ h2 i {
     border: none;
 }
 
-
+.stepper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.stepper-item {
+    text-align: center;
+}
+.stepper-item:before {
+    content: "";
+    position: relative;
+    display: block;
+}
 }
 
 
@@ -624,10 +638,6 @@ main h3, main p {
     margin: 5px 0px;
 }
 
-
-
-
-
 .home-page-images-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -654,8 +664,9 @@ main h3, main p {
 
 .your-games-container {
     display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
-    gap: 15px;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
     margin: 0px 15px;
 }
 
@@ -665,14 +676,15 @@ main h3, main p {
     gap: 0px 10px;
     align-items: center;
 }
-
-
+.mobile {display: none;}
 
 .game-description-text {
     place-self: start;
 }
 
-
+.library-desktop-disc h2 {
+    text-align: left;
+}
 
 /* Main - Product Page */
 

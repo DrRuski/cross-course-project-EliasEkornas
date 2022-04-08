@@ -25,18 +25,32 @@
 
 <main>
     <section class="create-account-main-container">
-        <div class="stepper">
-            
+        <a class="breadcrumb" href="index.html"><i class="fa-solid fa-angle-left"></i> Home</a>
+        <div>
+            <ol class="stepper">
+                <li class="stepper-item">
+                    <h3 class="stepper-title">1</h3>
+                    <p class="stepper-desc">Personal Information</p>
+                </li>
+                <li class="stepper-item">
+                    <h3 class="stepper-title">2</h3>
+                    <p class="stepper-desc">Payment and Billing</p>
+                </li>
+                <li class="stepper-item">
+                    <h3 class="stepper-title">3</h3>
+                    <p class="stepper-desc">Review and Confirm</p>
+                </li>
+            </ol>
         </div>
         <h1>Personal Information</h1>
         <div class="form-container">
-            <Form>
-                <label for="name">Name</label> <input type="text" name="name" id="name">
+            <form action="">
+                <label for="name">Full Name</label> <input type="text" name="name" id="name">
                 <label for="email">Email</label> <input type="email" name="email" id="email">
                 <label for="telephone">Tlf.</label> <input type="tel" name="telephone" id="telephone">
                 <label for="date">Date of birth</label> <input type="date" name="date" id="date">
-                <label for="selfie">Selfie</label><input type="file" name="selfie" id="selfie">
-            </Form>
+                <label for="selfie">Add picture</label><input type="file" name="selfie" id="selfie">
+            </form>
         </div>
         <a class="cart-cta" href="">Next</a>
 
