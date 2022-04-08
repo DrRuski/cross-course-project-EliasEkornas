@@ -462,17 +462,51 @@ h2 i {
 
 .account-container {
     display: grid;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: auto auto auto 1fr 1fr 1fr;
+    align-items: center;
     justify-items: center;
     margin: 0px 15px;
     gap: 0px 5px;
 }
 
 
-.fa-twitter, .fa-google, .fa-facebook {
+.SoMe-account a {
     font-size: 2.5em;
-    padding: 15px;
+    padding: 10px;
+    margin: 10px;
 }
+.SoMe-account a:nth-child(1) {
+    color: #25D366;
+}
+.SoMe-account a:nth-child(2) {
+    color: #1DA1F2;
+}
+.SoMe-account a:nth-child(3) {
+    color: #4267B2;
+}
+
+
+/* Main - Create-account */
+
+.create-account-main-container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    margin: 0px 15px;
+}
+.form-container form {
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    gap: 10px;
+}
+.form-container input {
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+#selfie {
+    border: none;
+}
+
 
 }
 
