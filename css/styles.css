@@ -16,6 +16,8 @@ body {
     font-family: "Inter";
 }
 
+
+
 /* Main-Nav */
 
 #current-home, #current-library, #current-cart, #current-account {
@@ -152,11 +154,11 @@ input::placeholder {
     grid-template-rows: 1fr 1fr 2fr;
 }
 
-.quiantity label::after {
+.quantity label::after {
     content: "";
     display: block;
 }
-.quiantity label {
+.quantity label {
     font-size: 1em;
     font-weight: bold;
 }
@@ -373,7 +375,8 @@ h2 i {
 .breadcrumb {
     text-decoration: none;
     color: #333;
-    padding: 10px;
+    padding: 15px;
+    justify-self: start;
     
 }
 
@@ -385,7 +388,7 @@ h2 i {
 
 .cart-description-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
 }
 
@@ -455,6 +458,21 @@ h2 i {
     font-weight: bold;
 }
 
+/* Main-Account */
+
+.account-container {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    justify-items: center;
+    margin: 0px 15px;
+    gap: 0px 5px;
+}
+
+
+.fa-twitter, .fa-google, .fa-facebook {
+    font-size: 2.5em;
+    padding: 15px;
+}
 
 }
 
