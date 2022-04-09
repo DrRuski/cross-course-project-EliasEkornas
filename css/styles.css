@@ -14,7 +14,9 @@ footer {grid-area: footer;}
 body {
     margin: 0px;
     font-family: "Inter";
+    min-height: 100vh;
 }
+
 
 
 
@@ -173,13 +175,32 @@ input::placeholder {
 }
 
 /* Footer */
-.copyright {
-    height: 30px;
-    text-align: center;
-    color: #eee;
-    line-height: 30px;
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
     background-color: #333;
+    color: #eee;
+    padding: 15px 0px;
 }
+
+.footer-container div {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 15px 0px;
+}
+.footer-container h5 {
+    font-size: 1.1em;
+    margin: 0px;
+}
+.footer-container a {
+    text-decoration: none;
+    color: #eee;
+}
+
 
 
 
