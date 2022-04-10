@@ -484,6 +484,27 @@ h2 i {
     display: block;
 }
 
+/* Main-Contact */
+
+.contact-main-container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    align-items: center;
+    gap: 15px 0px;
+}
+.contact-main-container h1 {
+    text-align: center;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+label {
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px;
+}
 
 /* Footer */
 .footer-container {
@@ -650,6 +671,13 @@ main h3, main p {
 #selfie {
     border: none;
 }
+
+/* Main-Contact */
+
+.contact-main-container {
+    margin: 0px 15px;
+}
+
 }
 
 
