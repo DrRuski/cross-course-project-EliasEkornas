@@ -35,6 +35,13 @@
                 <label for="telephone">Tlf.</label> <input type="tel" name="telephone" id="telephone">
                 <label for="message">Tell us what you think.</label><textarea name="message" id="message" cols="30" rows="10"></textarea>
             </form>
+            <div class="btn-container">
+                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Submit Feedback</button>
+                <div class="popup" id="popup">
+                    <h2>Thank you for your feedback!</h2>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -55,7 +62,16 @@
     </div>
     </footer>
 
-
+    <script>
+        let popup = document.getElementById ("popup");
+    
+        function openPopup () {
+            popup.classList.add("open-popup")
+        }
+        function closePopup () {
+            popup.classList.remove("open-popup")
+        }
+    </script>
 
 </body>
 </html>
