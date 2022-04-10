@@ -1,0 +1,102 @@
+
+/* Main-Nav */
+
+#current-home, #current-library, #current-cart, #current-account {
+    color: #FDC50A;
+    font-weight: bold;
+}
+
+.search-container {
+    width: 100%;
+    text-align: center;
+}
+
+.search-mobile {
+    border-radius: 20px;
+    width: 300px;
+    height: 2.3em;
+    margin: 15px 0px 0px 0px;
+    border-color: #FDC50A;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: #777;
+    font-size: 1.3em;
+}
+
+.current-sport {
+    background-color: #FDC50A;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #ccc; 
+}
+
+.main-nav-container {
+    height: 70px;
+    background-color: #333;
+    align-items: center;
+    display: grid;
+}
+
+.main-nav-container a {
+    display: grid;
+    text-align: center;
+    color: #eee;
+    text-decoration: none;
+    gap: 2px;
+    font-size: 0.9em;
+    padding: 10px 5px;
+}
+
+
+/* Local-Nav - Home */
+
+.local-nav-container {
+    height: 120px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #eee;
+    align-items: center;
+}
+
+.local-nav-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0px 10px;
+}
+
+.local-nav-menu a {
+    color: #333;
+    display: grid;
+    text-align: center;
+    gap: 2px;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 10px 5px;
+}
+
+/* Main - Home */  
+
+.home-page-images {
+    width: 100%;
+    margin: auto;
+}
+
+.home-page-images-container i {
+    color: #3FA535;
+}
+
+main h2 {
+    text-align: center;
+}
+
+h2 i {
+    margin: 0px 25px;
+    color: #E84545;
+}
+
+.promotional-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
