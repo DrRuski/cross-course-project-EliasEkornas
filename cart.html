@@ -92,8 +92,13 @@
                 </div>
             </div>
         </section>
-                <a class="cart-cta" href="">Confirm Order</a>
-            
+                <div class="btn-container">
+                    <button type="submit" class="btn-confirm-order" onclick="openPopup()">Confirm Order</button>
+                    <div class="popup" id="popup">
+                        <img src="images/Mobile-Order-Confirmed.png" alt="order confirmed">
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
+                </div>
 
     </section>
 </main>
@@ -119,6 +124,17 @@
 
 
 
+
+<script>
+    let popup = document.getElementById ("popup");
+
+    function openPopup () {
+        popup.classList.add("open-popup")
+    }
+    function closePopup () {
+        popup.classList.remove("open-popup")
+    }
+</script>
 
 
 </body>
