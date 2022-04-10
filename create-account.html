@@ -52,7 +52,13 @@
                 <label for="selfie">Add picture</label><input type="file" name="selfie" id="selfie">
             </form>
         </div>
-        <a class="cart-cta" href="">Next</a>
+        <div class="btn-container">
+            <button type="submit" class="btn-confirm-order" onclick="openPopup()">Create account</button>
+            <div class="popup" id="popup">
+                <h2>Congradulations! Account created.</h2>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
 
     </section>
 
@@ -81,7 +87,16 @@
 
 
 
-
+    <script>
+        let popup = document.getElementById ("popup");
+    
+        function openPopup () {
+            popup.classList.add("open-popup")
+        }
+        function closePopup () {
+            popup.classList.remove("open-popup")
+        }
+    </script>
 
 </body>
 </html>
