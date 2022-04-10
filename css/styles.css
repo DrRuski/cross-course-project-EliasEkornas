@@ -549,6 +549,9 @@ label {
     "nav"
     "footer";
 }
+#logo {
+    display: none;
+}
 
 h1 {
     font-size: 1.5em;
