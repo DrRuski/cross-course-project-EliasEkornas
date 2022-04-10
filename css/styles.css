@@ -361,6 +361,54 @@ h2 i {
     font-weight: bold;
 }
 
+.btn-container {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.btn-confirm-order {
+    padding: 10px 60px;
+    background-color: #333;
+    border: 1px solid #FDC50A;
+    cursor: pointer;
+    color: #FDC50A;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.popup {
+    top: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 30px;
+    background-color: #FDC50A;
+    border-radius: 10px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup button {
+    width: 100%;
+    padding: 10px 0px;
+    color: #FDC50A;
+    font-size: 1em;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px;
+    cursor: pointer;
+    
+}
+
 
 /* Main - Account */
 
@@ -589,53 +637,7 @@ main h3, main p {
     gap: 10px;
 }
 
-.btn-container {
-    text-align: center;
-    margin: 15px 0px;
-}
 
-.btn-confirm-order {
-    padding: 10px 60px;
-    background-color: #333;
-    border: 1px solid #FDC50A;
-    cursor: pointer;
-    color: #FDC50A;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.popup {
-    top: 0;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 30px;
-    background-color: #FDC50A;
-    border-radius: 10px;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-}
-
-.open-popup {
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-
-.popup button {
-    width: 100%;
-    padding: 10px 0px;
-    color: #FDC50A;
-    font-size: 1em;
-    background-color: #333;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px;
-    cursor: pointer;
-    
-}
 
 /* Main-Account */
 
