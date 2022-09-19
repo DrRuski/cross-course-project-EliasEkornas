@@ -4,7 +4,7 @@ import {
   email,
   feedBack,
   errorMessage,
-  successMessage
+  successMessage,
 } from "./containers/containers.js";
 
 import {
@@ -13,10 +13,8 @@ import {
   emailError,
   feedBackError,
 } from "./status/statusDisplay.js";
-import { formValid } from "./status/validation.js";
-import { checkLength, valEmail } from "./status/validation.js";
 
-
+import { checkLength, valEmail, formValid } from "./status/validation.js";
 
 const form = document.querySelector(".formContainer");
 const submitBtn = document.querySelector(".submitBtn");
@@ -50,11 +48,9 @@ submitBtn.onclick = function validForm() {
 
   form.addEventListener("submit", validForm);
 
-  
-
-  if (formValid){
-    return (successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`)
+  if (formValid) {
+    return (successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`);
   } else {
-    return (errorMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`)
+    return (errorMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`);
   }
 };
