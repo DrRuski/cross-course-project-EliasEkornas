@@ -1,4 +1,5 @@
-
+export const successMessage = document.querySelector(".success");
+export const errorMessage = document.querySelector(".error");
 
 /* Form Input Containers */
 export const firstName = document.querySelector("#firstName");

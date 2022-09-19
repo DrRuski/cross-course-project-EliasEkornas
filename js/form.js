@@ -3,6 +3,8 @@ import {
   lastName,
   email,
   feedBack,
+  errorMessage,
+  successMessage
 } from "./containers/containers.js";
 
 import {
@@ -48,9 +50,11 @@ submitBtn.onclick = function validForm() {
 
   form.addEventListener("submit", validForm);
 
-//   if (formValid){
-//     return ()
-//   } else {
-//     return ()
-//   }
+  
+
+  if (formValid){
+    return (successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`)
+  } else {
+    return (errorMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`)
+  }
 };

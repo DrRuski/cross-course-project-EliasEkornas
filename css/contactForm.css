@@ -40,9 +40,29 @@ input:hover, textarea:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.errorMessage {
+.inputError {
     display: none;
     color: #cc0000;
     padding: 0;
     margin: 0;}
 
+.successDisplay {
+    text-align: center;
+    background-color: #98dfb3;
+    color: #0b8339;
+    padding: 2rem;
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #999;
+}
+
+.errorDisplay {
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 1rem;
+    background-color:#FFCCCC;
+    color: #cc0000;
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #999;
+}
