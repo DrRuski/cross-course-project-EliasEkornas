@@ -8,7 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/deviceStyles/desktopStyles.css">
+<link rel="stylesheet" href="css/deviceStyles/mobileStyles.css">
+<link rel="stylesheet" href="css/contactForm.css">
+<link rel="stylesheet" href="css/globalStyles.css">
 <title>GameHub | Contact</title>
 
 <!-- Hotjar Tracking Code for https://gifted-engelbart-293066.netlify.app -->
@@ -39,28 +42,46 @@
 
 <main>
 
-    <section class="contact-main-container">
+    <section>
 
         <a class="breadcrumb" href="index.html"><i class="fa-solid fa-angle-left"></i> Home</a>
-
-        <h1>Let's get in touch</h1>
-        <p>If you have any feedback or comments you may use this contact form.</p>
         
-        <div class="form-container">
-            <form action="submit.php" method="POST">
-                <label for="name">Full Name</label> <input type="text" name="name" id="name">
-                <label for="email">Email</label> <input type="email" name="email" id="email">
-                <label for="telephone">Tlf.</label> <input type="tel" name="telephone" id="telephone">
-                <label for="message">Tell us what you think.</label><textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </form>
-            <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Submit Feedback</button>
-                <div class="popup" id="popup">
-                    <h2>Thank you for your feedback!</h2>
-                    <button type="button" onclick="closePopup()">OK</button>
-                </div>
+        <h1>Contact Form</h1>
+
+        <form class="formContainer" action="submit.php" method="POST">
+
+            <div class="input-container">
+                <label class="label" for="firstName">First Name</label>
+                <input type="text" name="first-name" id="firstName">
+                <p class="errorMessage" id="firstNameError">Did you forget to fill inn this field?</p>
             </div>
-        </div>
+
+            <div class="input-container">
+                <label class="label" for="lastName">Last Name</label>
+                <input type="text" name="last-name" id="lastName">
+                <p class="errorMessage" id="lastNameError">Did you forget to fill inn this field?</p>
+            </div>
+
+            <div class="input-container">
+                <label class="label" for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <p class="errorMessage" id="emailError">Current format/email is invalid.</p>
+            </div>
+
+            <div class="input-container">
+                <label class="label" for="feedBack">What seems to be the problem?</label>
+                <textarea name="feedback" id="feedBack" cols="30" rows="10"></textarea>
+                <p class="errorMessage" id="feedbackError">You need to write something.</p>
+            </div>
+
+            
+            <input class="submitBtn" type="submit" value="Submit">
+            
+
+
+
+        </form>
+        
     </section>
 
     </main>
@@ -79,6 +100,8 @@
         <a href="#">Complaints</a>
     </div>
     </footer>
+
+
     <script src="js/form.js" type="module"></script>
     <script src="js/popUp.js"></script>
 

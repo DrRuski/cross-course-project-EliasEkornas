@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+}
+
+/* GLOBAL STYLES */
+
+header {grid-area: header;}
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+body {
+    margin: 0;
+    font-family: "Inter", "Roboto", sans-serif;
+    height: 100vh;
+}
