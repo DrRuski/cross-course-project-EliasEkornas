@@ -8,9 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/globalStyles.css">
 <link rel="stylesheet" href="css/deviceStyles/desktopStyles.css">
 <link rel="stylesheet" href="css/deviceStyles/mobileStyles.css">
-<link rel="stylesheet" href="css/globalStyles.css">
 <title>GameHub | Product</title>
 
 <!-- Hotjar Tracking Code for https://gifted-engelbart-293066.netlify.app -->
@@ -28,32 +28,26 @@
 
 <body>
     <nav class="main-nav-container">
+        
+        <a href="index.html"><img href="index.html" class="logo-desktop" src="images/Logo.png" alt="GameHub Logo"></a>
+        
 
-       
-        <div>
-            <a id="logo" href="index.html">
-            <img class="logo-desktop" src="images/Logo.png" alt="GameHub Logo">
-            </a>
+        <div class="nav-menu">
+            <a class="home-hover" id="current-home" href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            <a class="library-hover" href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
+            <a class="account-hover" href="account.html"><i class="fa-solid fa-user"></i> Account</a>
+            <a class="cart-hover" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
         </div>
-
-        <div>
-            <a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
-            <a href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
-            <a id="current-home" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-            <a href="account.html"><i class="fa-solid fa-user"></i> Account</a>
-        </div>
-
-    
-</nav>
+    </nav>
     
 <main>
 
-    <section>
+    
+    <section class="product-container">
+        <div class="item-img-description">
         <div>
-            <img class="home-page-images" src="images/product-image.png" alt="trailer of the game">
+            <img src="images/GameHub_covers10.jpg" alt="trailer of the game">
         </div>
-    </section>
-    <section class="product-text">
         <div>
             <h1>Forge Legend</h1>
             <p>Digen osaliga. Platta till kurvan manat. Ileng teren. 
@@ -66,15 +60,22 @@
                 Antessa fotosofi. Bugon kontrara metrotyp. Mikrokang tetras oment.
             </p>
         </div>
+        </div>
+
+
+
+
+
         <div class="main-platform-container">
             <h2>Choose platform</h2>
-            <div class="platform-container">
+            <div class="devices">
                 <input type="radio" name="platform" value="windows" id="windows" checked="checked"><label for="windows"><i class="fa-brands fa-windows"></i>Windows</label>
                 <input type="radio" name="platform" value="xbox" id="xbox"><label for="xbox"><i class="fa-brands fa-xbox"></i>Xbox</label>
                 <input type="radio" name="platform" value="Playbox" id="playbox"><label for="playbox"><i class="fa-solid fa-gamepad"></i></i>Playbox</label>
                 <input type="radio" name="platform" value="playstation" id="playstation"><label for="playstation"><i class="fa-brands fa-playstation"></i>Playstation</label>
             </div>
         </div>
+
         <div class="main-platform-container">
             <h2>Choose your seller</h2>
             <select name="seller" id="seller">
@@ -85,25 +86,27 @@
             </select>
         </div>
     </section>
+
     <section class="payment-container">
-        <a href="cart.html">Vipps</a>
         <a href="cart.html">Add to Cart</a>
     </section>
 </main>
 
-<footer class="footer-container">
-    <div>
-        <h5>Shortcuts</h5>
-        <a href="account.html">Account</a>
-        <a href="#">Giftcards</a>
-        <a href="#">Offers</a>
-    </div>
-    <div>
-        <h5>Suport</h5>
-        <a href="contact.html">Contact</a>
-        <a href="#">FAQs</a>
-        <a href="#">Complaints</a>
-    </div>
+<footer>
+    <div class="footer-container">
+        <div>
+            <h5>Shortcuts</h5>
+            <a href="account.html">Account</a>
+            <a href="#">Giftcards</a>
+            <a href="#">Offers</a>
+        </div>
+        <div>
+            <h5>Suport</h5>
+            <a href="contact.html">Contact</a>
+            <a href="#">FAQs</a>
+            <a href="#">Complaints</a>
+        </div>
+    </div>      
     </footer>
 
 

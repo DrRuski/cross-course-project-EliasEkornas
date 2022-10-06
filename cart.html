@@ -8,9 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/globalStyles.css">
 <link rel="stylesheet" href="css/deviceStyles/desktopStyles.css">
 <link rel="stylesheet" href="css/deviceStyles/mobileStyles.css">
-<link rel="stylesheet" href="css/globalStyles.css">
+<link rel="stylesheet" href="css/contactForm.css">
 <title>GameHub | Cart</title>
 
 <!-- Hotjar Tracking Code for https://gifted-engelbart-293066.netlify.app -->
@@ -28,118 +29,96 @@
 
 <body>
     <nav class="main-nav-container">
+        
+        <a href="index.html"><img href="index.html" class="logo-desktop" src="images/Logo.png" alt="GameHub Logo"></a>
+        
 
-       
-        <div>
-            <a id="logo" href="index.html">
-            <img class="logo-desktop" src="images/Logo.png" alt="GameHub Logo">
-            </a>
+        <div class="nav-menu">
+            <a class="home-hover" id="current-home" href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            <a class="library-hover" href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
+            <a class="account-hover" href="account.html"><i class="fa-solid fa-user"></i> Account</a>
+            <a id="current-active" class="cart-hover" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
         </div>
+    </nav>
 
-        <div>
-            <a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
-            <a href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
-            <a id="current-home" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-            <a href="account.html"><i class="fa-solid fa-user"></i> Account</a>
-        </div>
-
-    
-</nav>
-    
 <main>
-    
-    <section class="main-cart-container">
-        <a class="breadcrumb" href="index.html"><i class="fa-solid fa-angle-left"></i> Home</a>
+    <section>
         <h1>Cart</h1>
-            <div class="cart-description-container">
-            <div>
-                <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i> (Verified Seller)</p>
-            </div>
-            <div>
-                <h2>Cyberpunk - Playbox Key</h2>
-                <p>Kosa fagen kroppsaktivism. Plarad kvasilogi. Vulkanresa queerpolska. 
-                    Vir stenosis, spede. Nebåde gåra. Åbel stenona. 
-                    Autoktiga. Prodir tel. Dotålyling tepatologi härgjord. 
-                </p>
-            </div>
-            </div>
-            <div>
-                <div class="quantity">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" name="quantity" id="quantity"
-                    min="1" max="100">
-                </div>
-            </div>
-        <section class="cart-text-format">
-            <div>
-                <h2>Delivery Location</h2>
-            <div class="delivery-and-payment-container">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <h3>24th Wong ST.</h3>
-                        <h4>4902, Somewhere in Asia</h4>
+        
+        
+
+
+        <div class="shopping-cart-container">
+            <div class="item-container">
+                
+                <div class="item-display-container">
+                    <label for="item-image-title"><span>ITEM</span></label>
+                    <div class="item-showcase item-showcase-mobile item-image-title">
+                        <img class="item-img" src="images/GameHub_covers5.jpg" alt=""><span class="item-title">ASSASSIN</span>
                     </div>
-                    <i class="fa-solid fa-angle-right"></i>
                 </div>
-            </div>
-            <div>
-                <h2>Payment Method</h2>
-            <div class="delivery-and-payment-container">
-                    <i class="fa-brands fa-cc-visa"></i>
-                <div>
-                    <h4>Visa Classic</h4>
-                    <h4>*****-2309</h4>
+
+                <div class="item-display-container">
+                    <label for="platform"><span>PLATFORM</span></label>
+                    <div class="item-showcase platform">
+                        <span>PLAYBOX</span>
+                    </div>
                 </div>
-                <i class="fa-solid fa-angle-right"></i>
-            </div>
+
+                <div class="item-display-container">
+                    <label for="quantity"><span>QUANTITY</span></label>
+                    <div class="item-showcase quantity">
+                        <input type="text" name="item-quantity" id="item-quantity">
+                    </div>
+                </div>
+
+                <div class="item-display-container">
+                    <label for="price"><span>PRICE</span></label>
+                    <div class="item-showcase price">
+                        <span class="price">499,-</span>
+                    </div>
+                </div>
+
+                <div class="item-showcase"><button class="remove-btn"><i class="fa-solid fa-trash-can"></i></button></div>
+            
             </div>
 
-            <div>
-                <h2>Order Info</h2>
-                <div class="order-info-container">
-                    <div>
-                        <h4>Subtotal</h4>
-                        <h5>359kr</h5>
-                    </div>
-
-                    <div>
-                        <h4>Shipping Cost</h4>
-                        <h5>+23.99kr</h5>
-                    </div>
-
-                    <div>
-                        <h4>Total</h4>
-                        <h5>389.99kr</h5>
-                    </div>
+            <div class="payment-and-subotal">
+                <div class="subtotal">
+                    <label for=""><span>SUBTOTAL</span></label>
                 </div>
+                <div class="checkout-btn"><button></button></div>
+                <div class="vipps-btn"><button></button></div>
+
             </div>
-        </section>
-                <div class="btn-container">
-                    <button type="submit" class="btn-confirm-order" onclick="openPopup()">Confirm Order</button>
-                    <div class="popup" id="popup">
-                        <img src="images/Mobile-Order-Confirmed.png" alt="order confirmed">
-                        <button type="button" onclick="closePopup()">OK</button>
-                    </div>
-                </div>
+        </div>
+
+
 
     </section>
+
+    
+
+    
+
 </main>
 
 
-<footer class="footer-container">
-    <div>
-        <h5>Shortcuts</h5>
-        <a href="account.html">Account</a>
-        <a href="#">Giftcards</a>
-        <a href="#">Offers</a>
-    </div>
-    <div>
-        <h5>Suport</h5>
-        <a href="contact.html">Contact</a>
-        <a href="#">FAQs</a>
-        <a href="#">Complaints</a>
-    </div>
+<footer>
+    <div class="footer-container">
+        <div>
+            <h5>Shortcuts</h5>
+            <a href="account.html">Account</a>
+            <a href="#">Giftcards</a>
+            <a href="#">Offers</a>
+        </div>
+        <div>
+            <h5>Support</h5>
+            <a href="contact.html">Contact</a>
+            <a href="#">FAQs</a>
+            <a href="#">Complaints</a>
+        </div>
+    </div>      
     </footer>
 
 
@@ -147,7 +126,7 @@
 
 
 
-
+<!-- <script src="js/form.js" type="module"></script> -->
 <script src="js/popUp.js"></script>
 
 

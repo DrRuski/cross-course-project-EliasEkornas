@@ -1,6 +1,14 @@
 export const successMessage = document.querySelector(".success");
 export const errorMessage = document.querySelector(".error");
 
+// Shopping Cart
+export const imageTitleContainer = document.querySelector(".item-image-title")
+export const platformContainer = document.querySelector(".platform")
+export const quantityContainer = document.querySelector(".quantity")
+export const priceContainer = document.querySelector(".price")
+export const removeButton = document.querySelector(".remove-btn")
+
+
 /* Form Input Containers */
 export const firstName = document.querySelector("#firstName");
 export const lastName = document.querySelector("#lastName");

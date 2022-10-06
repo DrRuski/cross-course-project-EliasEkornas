@@ -8,9 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/globalStyles.css">
 <link rel="stylesheet" href="css/deviceStyles/desktopStyles.css">
 <link rel="stylesheet" href="css/deviceStyles/mobileStyles.css">
-<link rel="stylesheet" href="css/globalStyles.css">
 <title>GameHub | Library</title>
 
 <!-- Hotjar Tracking Code for https://gifted-engelbart-293066.netlify.app -->
@@ -28,45 +28,39 @@
 
 <body>
     <nav class="main-nav-container">
+        
+        <a href="index.html"><img href="index.html" class="logo-desktop" src="images/Logo.png" alt="GameHub Logo"></a>
+        
 
-       
-        <div>
-            <a id="logo" href="index.html">
-            <img class="logo-desktop" src="images/Logo.png" alt="GameHub Logo">
-            </a>
+        <div class="nav-menu">
+            <a class="home-hover" id="current-home" href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            <a id="current-active" class="library-hover" href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
+            <a class="account-hover" href="account.html"><i class="fa-solid fa-user"></i> Account</a>
+            <a class="cart-hover" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
         </div>
+    </nav>
 
-        <div>
-            <a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
-            <a id="current-home" href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-            <a href="account.html"><i class="fa-solid fa-user"></i> Account</a>
-        </div>
 
-    
-</nav>
     <header>
         <section class="local-nav-container">
             <div class="search-container">
-                <input class="search-mobile" type="text" name="search" placeholder="Search">
+                <input class="search-mobile" type="text" name="search" placeholder="Search...">
             </div>
+
             <div class="content-switcher">
-                <a class="your-games" href="">Your Games</a>
-                <a class="marketplace" href="">Marketplace</a>
+                <a class="active-switcher" href="#">Your Games</a>
+                <a class="inactive-switcher" href="#">Marketplace</a>
             </div>
         </section>
+
         </header>
     
 <main>
-    <div class="desktop library-desktop-disc">
-        <h2><i class="fa-solid fa-gamepad"></i> Recently Bought <i class="fa-solid fa-gamepad"></i></h2>
-    </div>
+    
+    <h2><i class="fa-solid fa-gamepad"></i> Recently Bought <i class="fa-solid fa-gamepad"></i></h2>
+    
     <section class="your-games-container">
-        <div class="your-games-product-container mobile">
-            <h2>Title</h2>
-            <h2>Description</h2>
-            <h2>Status</h2>
-        </div>
+
         <div class="your-games-product-container">
             <img class="home-page-images" src="images/GameHub_covers9.jpg" alt="picture of game">
             <div class="game-description-text">
@@ -76,7 +70,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -93,7 +87,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -110,7 +104,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -127,7 +121,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -144,7 +138,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -155,9 +149,9 @@
     
 
 
-    <div class="desktop library-desktop-disc">
-        <h2><i class="fa-solid fa-gamepad"></i> Your Game Library <i class="fa-solid fa-gamepad"></i></h2>
-    </div>
+    
+        <h2 class="desktop"><i class="fa-solid fa-gamepad"></i> Your Game Library <i class="fa-solid fa-gamepad"></i></h2>
+
     <section class="your-games-container desktop">
         <div class="your-games-product-container mobile">
             <h2>Title</h2>
@@ -173,7 +167,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -190,7 +184,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -207,7 +201,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -224,7 +218,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -241,7 +235,7 @@
             </p>
             </div>
             <div class="btn-container">
-                <button type="submit" class="btn-confirm-order" onclick="openPopup()">Code</button>
+                <button type="submit" class="code-btn" onclick="openPopup()">Code</button>
                 <div class="popup" id="popup">
                     <img src="images/Mobile-popup.png" alt="order confirmed">
                     <button type="button" onclick="closePopup()">OK</button>
@@ -255,19 +249,21 @@
     
 </main>
 
-<footer class="footer-container">
-    <div>
-        <h5>Shortcuts</h5>
-        <a href="account.html">Account</a>
-        <a href="#">Giftcards</a>
-        <a href="#">Offers</a>
-    </div>
-    <div>
-        <h5>Suport</h5>
-        <a href="contact.html">Contact</a>
-        <a href="#">FAQs</a>
-        <a href="#">Complaints</a>
-    </div>
+<footer>
+    <div class="footer-container">
+        <div>
+            <h5>Shortcuts</h5>
+            <a href="account.html">Account</a>
+            <a href="#">Giftcards</a>
+            <a href="#">Offers</a>
+        </div>
+        <div>
+            <h5>Suport</h5>
+            <a href="contact.html">Contact</a>
+            <a href="#">FAQs</a>
+            <a href="#">Complaints</a>
+        </div>
+    </div>      
     </footer>
 
 

@@ -8,9 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/globalStyles.css">
 <link rel="stylesheet" href="css/deviceStyles/desktopStyles.css">
 <link rel="stylesheet" href="css/deviceStyles/mobileStyles.css">
-<link rel="stylesheet" href="css/globalStyles.css">
 <title>GameHub | Home</title>
 
 <!-- Hotjar Tracking Code for https://gifted-engelbart-293066.netlify.app -->
@@ -32,27 +32,22 @@
 <body>
 
     <nav class="main-nav-container">
-
-       
-            <div>
-                <a id="logo" href="index.html">
-                <img class="logo-desktop" src="images/Logo.png" alt="GameHub Logo">
-                </a>
-            </div>
-
-            <div>
-                <a id="current-home" href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
-                <a href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-                <a href="account.html"><i class="fa-solid fa-user"></i> Account</a>
-            </div>
-
         
+        <a href="index.html"><img href="index.html" class="logo-desktop" src="images/Logo.png" alt="GameHub Logo"></a>
+        
+
+        <div class="nav-menu">
+            <a class="home-hover" id="current-active" href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            <a class="library-hover" href="library.html"><i class="fa-solid fa-gamepad"></i> Library</a>
+            <a class="account-hover" href="account.html"><i class="fa-solid fa-user"></i> Account</a>
+            <a class="cart-hover" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        </div>
     </nav>
+
     <header>
         <section class="local-nav-container">
             <div class="search-container">
-                <input class="search-mobile" type="text" name="search" placeholder="Search">
+                <input class="search-mobile" type="text" name="search" placeholder="Search...">
             </div>
             <div class="local-nav-menu">
                 <a class="current-sport" href=""><i class="fa-solid fa-baseball-bat-ball"></i>Sport</a>
@@ -67,141 +62,328 @@
 
 
 <main>
-
+    
     <h2><i class="fa-solid fa-fire"></i>Hot right now<i class="fa-solid fa-fire"></i></h2>
+
     <section class="home-page-images-container">
-        <div>
-            <img class="home-page-images" src="images/GameHub_covers.jpg" alt="picture of game">
+        <div class="product-list-item">
             <div>
-            <h3>Ping Pong</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PC) <i class="fa-brands fa-windows"></i></p>
+                </a>
             </div>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>399,-</h4>
+            </div>
         </div>
-        <div>
-            <img class="home-page-images" src="images/GameHub_covers10.jpg" alt="picture of game">
+
+        <div class="product-list-item">
             <div>
-            <h3>Forge Legend</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers10.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (Xbox) <i class="fa-brands fa-xbox"></i></p>
+                </a>
             </div>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>499,-</h4>
+            </div>
         </div>
-        <div>
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers5.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PS) <i class="fa-brands fa-playstation"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>299,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers.jpg" alt="picture of game">
-            <h3>Ping Pong</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers3.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PC) <i class="fa-brands fa-windows"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>599,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers10.jpg" alt="picture of game">
-            <h3>Forge Legend</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers9.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (Xbox) <i class="fa-brands fa-xbox"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>399,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers8.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PS) <i class="fa-brands fa-playstation"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>199,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers4.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (Xbox) <i class="fa-brands fa-xbox"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>499,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers7.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PC) <i class="fa-brands fa-windows"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>699,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (Xbox) <i class="fa-brands fa-xbox"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>299,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers10.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PS) <i class="fa-brands fa-playstation"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>799,-</h4>
+            </div>
         </div>
+
+        
+
+
+
+        
     </section>
 
-    <section>
+    <section class="desktop-additional-products">
         <img class="promotional-image" src="images/Centreimg.png" alt="pre-order promotional image">
     </section>
-
-    <h2><i class="fa-solid fa-fire"></i>New Releases<i class="fa-solid fa-fire"></i></h2>
+    
+    <h2 class="desktop-additional-products"><i class="fa-solid fa-fire"></i>New Releases<i class="fa-solid fa-fire"></i></h2>
     <section class="home-page-images-container">
-        <div>
-            <img class="home-page-images" src="images/GameHub_covers5.jpg" alt="picture of game">
-            <h3>Assassin</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PC) <i class="fa-brands fa-windows"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>399,-</h4>
+            </div>
         </div>
-        <div>
-            <img class="home-page-images" src="images/GameHub_covers6.jpg" alt="picture of game">
-            <h3>Space War</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers10.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (Xbox) <i class="fa-brands fa-xbox"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>499,-</h4>
+            </div>
         </div>
-        <div>
-            <img class="home-page-images" src="images/GameHub_covers4.jpg" alt="picture of game">
-            <h3>Furious</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers5.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PS) <i class="fa-brands fa-playstation"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>299,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers.jpg" alt="picture of game">
-            <h3>Ping Pong</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers3.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PC) <i class="fa-brands fa-windows"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>599,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers10.jpg" alt="picture of game">
-            <h3>Forge Legend</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers9.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (Xbox) <i class="fa-brands fa-xbox"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>399,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers8.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PS) <i class="fa-brands fa-playstation"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>199,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers4.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (Xbox) <i class="fa-brands fa-xbox"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>499,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers7.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PC) <i class="fa-brands fa-windows"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>699,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (Xbox) <i class="fa-brands fa-xbox"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>299,-</h4>
+            </div>
         </div>
-        <div class="desktop-additional-products">
-            <img class="home-page-images" src="images/GameHub_covers2.jpg" alt="picture of game">
-            <h3>Super Duper</h3>
-            <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
-            <a class="buy-button" href="product-screen.html">Buy</a>
+
+        <div class="product-list-item">
+            <div>
+                <a href="product-screen.html">
+                <img class="home-page-images" src="images/GameHub_covers10.jpg" alt="picture of game">
+                <h3>Ping Pong</h3>
+                <p>Seller: Peter <i class="fa-solid fa-circle-check"></i></p>
+                <p class="platform">Platform (PS) <i class="fa-brands fa-playstation"></i></p>
+                </a>
+            </div>
+            <div class="btn-price">
+                <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <h4>799,-</h4>
+            </div>
         </div>
+
+        
+
+
+
+        
     </section>
     
 
@@ -210,19 +392,21 @@
 
 
 
-<footer class="footer-container">
-    <div>
-        <h5>Shortcuts</h5>
-        <a href="account.html">Account</a>
-        <a href="#">Giftcards</a>
-        <a href="#">Offers</a>
-    </div>
-    <div>
-        <h5>Suport</h5>
-        <a href="contact.html">Contact</a>
-        <a href="#">FAQs</a>
-        <a href="#">Complaints</a>
-    </div>
+<footer>
+    <div class="footer-container">
+        <div>
+            <h5>Shortcuts</h5>
+            <a href="account.html">Account</a>
+            <a href="#">Giftcards</a>
+            <a href="#">Offers</a>
+        </div>
+        <div>
+            <h5>Suport</h5>
+            <a href="contact.html">Contact</a>
+            <a href="#">FAQs</a>
+            <a href="#">Complaints</a>
+        </div>
+    </div>      
     </footer>
 
 </body>
