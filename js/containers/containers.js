@@ -16,5 +16,6 @@ export const feedBack = document.querySelector("#feedBack");
 
 // INDEX
 
-export const indexSections = document.querySelectorAll(".home-page-images-container")
-
+export const indexSections = document.querySelectorAll(
+  ".home-page-images-container"
+);
