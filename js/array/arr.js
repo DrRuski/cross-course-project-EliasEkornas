@@ -1,4 +1,4 @@
-export const gameProducts = [
+export const gameProductsArray = [
   {
     id: 1001,
     title: "Ping Pong",
