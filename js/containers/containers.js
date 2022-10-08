@@ -8,6 +8,10 @@ export const quantityContainer = document.querySelector(".quantity");
 export const priceContainer = document.querySelector(".price");
 export const removeButton = document.getElementsByClassName("remove-btn");
 
+export const cartItemContainer = document.querySelector(
+  ".shopping-cart-container"
+);
+
 /* Form Input Containers */
 export const firstName = document.querySelector("#firstName");
 export const lastName = document.querySelector("#lastName");
@@ -15,7 +19,7 @@ export const email = document.querySelector("#email");
 export const feedBack = document.querySelector("#feedBack");
 
 // INDEX
-
 export const indexSections = document.querySelectorAll(
   ".home-page-images-container"
 );
+export const addButton = document.querySelectorAll(".btn-price a");

@@ -1,5 +1,7 @@
 import { gameProductsArray } from "./array/arr.js";
 import { indexSections } from "./containers/containers.js";
+import { cartItemContainer } from "./containers/containers.js";
+import { getCartItems } from "./cart/cartFunctions.js";
 
 for (let index = 0; index < gameProductsArray.length; index++) {
   const games = gameProductsArray[index];
@@ -16,9 +18,45 @@ for (let index = 0; index < gameProductsArray.length; index++) {
                                             </a>
                                         </div>
                                         <div class="btn-price">
-                                            <a class="buy-btn" href="product-screen.html"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <i data-id="${games.id}" data-title="${games.title}" data-price="${games.price}" data-platform="${games.platform}" data-image="${games.image}" class="buy-btn fa-solid fa-cart-plus"></i>
                                             <h4>${games.price},-</h4>
                                         </div>
                                     </div>`)
   );
+}
+
+const addButton = document.querySelectorAll(".btn-price i");
+
+addButton.forEach((button) => {
+  button.addEventListener("click", handleClick);
+});
+
+function handleClick() {
+  const id = this.dataset.id;
+  const title = this.dataset.title;
+  const price = this.dataset.price;
+  const platform = this.dataset.platform;
+  const image = this.dataset.image;
+
+  const currentItems = getCartItems();
+
+  const gameDuplicate = currentItems.find(function (game) {
+    return game.id === id;
+  });
+
+  if (!gameDuplicate) {
+    const gameProduct = {
+      id: id,
+      title: title,
+      price: price,
+      platform: platform,
+      image: image,
+    };
+    currentItems.push(gameProduct);
+    saveAddedGames(currentItems);
+  }
+}
+
+function saveAddedGames(cartItems) {
+  localStorage.setItem("addedGames", JSON.stringify(cartItems));
 }

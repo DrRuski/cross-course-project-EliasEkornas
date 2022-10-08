@@ -71,13 +71,12 @@
 
     .buy-btn {
         padding: 0.5rem 1rem;
+        color: #333;
         background-color: #FDC50A;
         border-radius: 0.3rem;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;}
 
-    .buy-btn i{
-        color: #333;
-    }
+    
     .buy-btn:hover{
         background-color: #a881017a;
     }
