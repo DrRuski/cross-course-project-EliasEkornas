@@ -1,6 +1,5 @@
 import { gameProductsArray } from "./array/arr.js";
-import { indexSections } from "./containers/containers.js";
-import { cartItemContainer } from "./containers/containers.js";
+import { indexSections, itemAddedDisplay } from "./containers/containers.js";
 import { getCartItems } from "./cart/cartFunctions.js";
 
 for (let index = 0; index < gameProductsArray.length; index++) {
@@ -28,10 +27,10 @@ for (let index = 0; index < gameProductsArray.length; index++) {
 const addButton = document.querySelectorAll(".btn-price i");
 
 addButton.forEach((button) => {
-  button.addEventListener("click", handleClick);
+  button.addEventListener("click", addItem);
 });
 
-function handleClick() {
+function addItem() {
   const id = this.dataset.id;
   const title = this.dataset.title;
   const price = this.dataset.price;

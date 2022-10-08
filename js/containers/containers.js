@@ -23,3 +23,4 @@ export const indexSections = document.querySelectorAll(
   ".home-page-images-container"
 );
 export const addButton = document.querySelectorAll(".btn-price a");
+export const itemAddedDisplay = document.querySelector(".item-added-display");
