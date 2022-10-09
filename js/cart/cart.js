@@ -44,12 +44,13 @@ addedGames.forEach((game) => {
         <i data-id="${game.id}" class="remove-btn fa-solid fa-trash-can"></i>
       </div>
     </div>`;
+
 });
 
 for (let index = 0; index < addedGames.length; index++) {
   const priceOfGame = addedGames[index].price;
   let subtotalGamePrice = (gamePrice += parseInt(priceOfGame));
-  subTotal.innerHTML = subtotalGamePrice + ",-";
+  subTotal.innerHTML = subtotalGamePrice + ",- Kr";
 }
 
 purchaseBtn.onclick = function () {
@@ -66,13 +67,16 @@ Prioritized other aspects of the CA */
 //   removeButton.addEventListener("click", deletingCartItem)
 // });
 
+// console.log(removeButton)
+
 // function deletingCartItem() {
 
-//   const test = addedGames.find(function (gameItem){
-//     return gameItem.id === id;
-//   })
-//   }
+//   for (let index = 0; index < game.length; index++) {
+//     const element = game[index].id;
+    
+//     if(element === id){
+//       return localStorage.removeItem();
 
-// removeButton.onclick = function(){
-//   localStorage.removeItem("")
+//     }
+//   }
 // }
