@@ -1,7 +1,14 @@
 import { getCartItems } from "./cartFunctions.js";
-import { removeButton, cartItemContainer } from "../containers/containers.js";
+import {
+  removeButton,
+  cartItemContainer,
+  purchaseBtn,
+  subTotal,
+} from "../containers/containers.js";
 
 const addedGames = getCartItems();
+
+let gamePrice = 0;
 
 addedGames.forEach((game) => {
   cartItemContainer.innerHTML += `<div class="item-container">
@@ -34,7 +41,38 @@ addedGames.forEach((game) => {
       </div>
 
       <div class="item-showcase">
-        <button class="remove-btn"><i class="fa-solid fa-trash-can"></i></button>
+        <i data-id="${game.id}" class="remove-btn fa-solid fa-trash-can"></i>
       </div>
     </div>`;
 });
+
+for (let index = 0; index < addedGames.length; index++) {
+  const priceOfGame = addedGames[index].price;
+  let subtotalGamePrice = (gamePrice += parseInt(priceOfGame));
+  subTotal.innerHTML = subtotalGamePrice + ",-";
+}
+
+purchaseBtn.onclick = function () {
+  alert("Thank you for the purchase.");
+  localStorage.clear();
+  cartItemContainer.innerHTML = "";
+  subTotal.innerHTML = "0,-";
+};
+
+/* Tried making a remove button that did not go well.
+Prioritized other aspects of the CA */
+
+// removeButton.forEach(removeButton => {
+//   removeButton.addEventListener("click", deletingCartItem)
+// });
+
+// function deletingCartItem() {
+
+//   const test = addedGames.find(function (gameItem){
+//     return gameItem.id === id;
+//   })
+//   }
+
+// removeButton.onclick = function(){
+//   localStorage.removeItem("")
+// }

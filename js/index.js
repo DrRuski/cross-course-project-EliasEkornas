@@ -2,6 +2,8 @@ import { gameProductsArray } from "./array/arr.js";
 import { indexSections, itemAddedDisplay } from "./containers/containers.js";
 import { getCartItems } from "./cart/cartFunctions.js";
 
+let itemCount = 0;
+
 for (let index = 0; index < gameProductsArray.length; index++) {
   const games = gameProductsArray[index];
 
@@ -53,6 +55,12 @@ function addItem() {
     };
     currentItems.push(gameProduct);
     saveAddedGames(currentItems);
+
+    itemCount++;
+    itemAddedDisplay.innerHTML = `<i class="fa-solid fa-cart-shopping"></i>` + itemCount;
+
+  } else {
+    alert("This item has already been added.")
   }
 }
 
