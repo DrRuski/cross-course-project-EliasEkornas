@@ -1,8 +1,8 @@
 export const formValid =
-checkLength(firstName.value, 0) &&
-checkLength(lastName.value, 0) &&
+checkLength(firstName.value, 2) &&
+checkLength(lastName.value, 2) &&
 valEmail(email.value) &&
-checkLength(feedBack.value, 10);
+checkLength(feedBack.value, 2);
 
 export function checkLength(value, len) {
   if (value.trim().length > len) {
