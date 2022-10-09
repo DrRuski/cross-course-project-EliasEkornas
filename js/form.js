@@ -49,9 +49,9 @@ function validForm(event) {
   if (formValid) {
     successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`;
  }
-//  else {
-//     successMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`;
-//  }
+ else {
+    successMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`;
+ }
   
  
 }
