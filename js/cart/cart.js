@@ -4,7 +4,7 @@ import {
   cartItemContainer,
   purchaseBtn,
   subTotal,
-  vippsPurchase
+  vippsPurchase,
 } from "../containers/containers.js";
 
 const addedGames = getCartItems();
@@ -38,7 +38,6 @@ addedGames.forEach((game) => {
         <i data-id="${game.id}" class="remove-btn fa-solid fa-trash-can"></i>
       </div>
     </div>`;
-
 });
 
 for (let index = 0; index < addedGames.length; index++) {
@@ -74,7 +73,7 @@ Prioritized other aspects of the CA */
 
 //   for (let index = 0; index < game.length; index++) {
 //     const element = game[index].id;
-    
+
 //     if(element === id){
 //       return localStorage.removeItem();
 

@@ -19,6 +19,7 @@ import { checkLength, valEmail, formValid } from "./status/validation.js";
 const form = document.querySelector(".formContainer");
 
 function validForm(event) {
+
   event.preventDefault();
 
   if (checkLength(firstName.value, 0) === true) {
@@ -46,9 +47,12 @@ function validForm(event) {
   }
 
   if (formValid) {
-    return (successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`);
-  } else {
-    return (errorMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`);
-  }
+    successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`;
+ }
+//  else {
+//     successMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`;
+//  }
+  
+ 
 }
 form.addEventListener("submit", validForm);
