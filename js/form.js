@@ -47,10 +47,10 @@ function validForm(event) {
   }
 
   if (formValid) {
-    successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`;
+    return (successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`);
  }
  else {
-    errorMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`;
+    return (errorMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`);
  }
   
  
