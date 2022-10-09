@@ -50,7 +50,7 @@ function validForm(event) {
     successMessage.innerHTML = `<div class="successDisplay">You have submitted the form!</div>`;
  }
  else {
-    successMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`;
+    errorMessage.innerHTML = `<div class="errorDisplay">Something went wrong!</div>`;
  }
   
  
