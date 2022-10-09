@@ -4,6 +4,7 @@ import {
   cartItemContainer,
   purchaseBtn,
   subTotal,
+  vippsPurchase
 } from "../containers/containers.js";
 
 const addedGames = getCartItems();
@@ -23,13 +24,6 @@ addedGames.forEach((game) => {
         <label for="platform"><span>PLATFORM</span></label>
         <div class="item-showcase platform">
             <span>${game.platform}</span>
-        </div>
-      </div>
-
-      <div class="item-display-container">
-        <label for="quantity"><span>QUANTITY</span></label>
-        <div class="item-showcase quantity">
-            <input value="1" type="text" name="item-quantity" id="item-quantity">
         </div>
       </div>
 
@@ -54,6 +48,13 @@ for (let index = 0; index < addedGames.length; index++) {
 }
 
 purchaseBtn.onclick = function () {
+  alert("Thank you for the purchase.");
+  localStorage.clear();
+  cartItemContainer.innerHTML = "";
+  subTotal.innerHTML = "0,-";
+};
+
+vippsPurchase.onclick = function () {
   alert("Thank you for the purchase.");
   localStorage.clear();
   cartItemContainer.innerHTML = "";

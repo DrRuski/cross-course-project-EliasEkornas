@@ -10,8 +10,9 @@ export const removeButton = document.querySelectorAll("remove-btn");
 export const cartItemContainer = document.querySelector(
   ".shopping-cart-container");
 
-export const purchaseBtn = document.querySelector(".checkout-btn")
-export const subTotal = document.querySelector(".subtotal span")
+export const purchaseBtn = document.querySelector(".checkout-btn");
+export const vippsPurchase = document.querySelector(".vipps-btn");
+export const subTotal = document.querySelector(".subtotal span");
 
 /* Form Input Containers */
 export const firstName = document.querySelector("#firstName");
