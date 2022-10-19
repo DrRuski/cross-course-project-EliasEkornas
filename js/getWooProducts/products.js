@@ -1,6 +1,6 @@
 
 
-const url = "url";
+const url = "https://imdev.no/wp-json/wc/store/products";
 
 
 async function getWooProducts(){
@@ -15,3 +15,5 @@ async function getWooProducts(){
     }
 
 }
+
+// getWooProducts();
