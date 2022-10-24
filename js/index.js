@@ -5,6 +5,11 @@ let itemCount = 0;
 
 const url = "https://imdev.no/wp-json/wc/store/products";
 
+
+
+
+
+
 async function getWooProducts() {
   try {
     const response = await fetch(url);
@@ -21,7 +26,7 @@ async function getWooProducts() {
           (indexSections) =>
             (indexSections.innerHTML += `<div class="product-list-item">
                                                   <div>
-                                                      <a href="product-screen.html">
+                                                      <a href="product-screen.html?id=${game.id}">
                                                       <img class="home-page-images" src="${gamesImages.src}" alt="picture of game">
                                                       <h3>${game.name}</h3>
                                                       <p class="platform">Playbox <i class="fa-brands fa-xbox"></i></i></p>
@@ -44,7 +49,7 @@ async function getWooProducts() {
   }
 }
 
-getWooProducts();
+// getWooProducts();
 
 function buttonListener() {
   const addButton = document.querySelectorAll(".btn-price i");
