@@ -8,7 +8,8 @@ export const quantityContainer = document.querySelector(".quantity");
 export const priceContainer = document.querySelector(".price");
 export const removeButton = document.querySelectorAll("remove-btn");
 export const cartItemContainer = document.querySelector(
-  ".shopping-cart-container");
+  ".shopping-cart-container"
+);
 
 export const purchaseBtn = document.querySelector(".checkout-btn");
 export const vippsPurchase = document.querySelector(".vipps-btn");
