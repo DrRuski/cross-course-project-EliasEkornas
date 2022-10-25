@@ -14,21 +14,26 @@ h1 {
 
 .input-container {
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
 
 .input-container input {
-    height: 2rem; 
+    height: 2rem;
     border-radius: 0.2rem;
     border: 1px solid #ddd;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;}
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
 
 textarea {
     border-radius: 0.2rem;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    border: 1px solid #ddd;}
+    border: 1px solid #ddd;
+}
 
-input:hover, textarea:hover {
-    border: 1px solid #000;}
+input:hover,
+textarea:hover {
+    border: 1px solid #000;
+}
 
 
 .submitBtn {
@@ -40,7 +45,7 @@ input:hover, textarea:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.submitBtn:active{
+.submitBtn:active {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
@@ -48,7 +53,8 @@ input:hover, textarea:hover {
     display: none;
     color: #cc0000;
     padding: 0;
-    margin: 0;}
+    margin: 0;
+}
 
 .successDisplay {
     text-align: center;
@@ -64,7 +70,7 @@ input:hover, textarea:hover {
     text-align: center;
     line-height: 1.5rem;
     padding: 1rem;
-    background-color:#FFCCCC;
+    background-color: #FFCCCC;
     color: #cc0000;
     max-width: 500px;
     margin: auto;

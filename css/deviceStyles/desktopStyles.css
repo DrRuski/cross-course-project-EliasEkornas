@@ -1,44 +1,55 @@
-
 /* DESKTOP STYLES */
 @media only screen and (min-width:45rem) {
 
-    
+
     main {
         max-width: 80rem;
-        margin: auto;}
-    
+        margin: auto;
+    }
+
     h1 {
         font-size: 2em;
-        font-weight: bold;}
-    
-    
-    
-    /* Main - Home */  
-    
+        font-weight: bold;
+    }
+
+
+
+    /* Main - Home */
+
     main h2 {
         font-size: 1.5em;
-        margin: 25px;}
-    
-    main h3, main p {
-        font-size: 1em;
-        margin: 5px 0px;}
+        margin: 25px;
+    }
 
-    
-    .home-hover:hover, .library-hover:hover, .account-hover:hover, .cart-hover:hover {
-    color: #a88101;}
-    
+    main h3,
+    main p {
+        font-size: 1em;
+        margin: 5px 0px;
+    }
+
+
+    .home-hover:hover,
+    .library-hover:hover,
+    .account-hover:hover,
+    .cart-hover:hover {
+        color: #a88101;
+    }
+
 
 
     .logo-desktop {
-        max-width: 6rem;}
+        max-width: 6rem;
+    }
 
-    .main-nav-container{
+    .main-nav-container {
         display: flex;
-        justify-content: space-evenly;}
+        justify-content: space-evenly;
+    }
 
-    .nav-menu{
+    .nav-menu {
         gap: 3rem;
-        align-items: center;}
+        align-items: center;
+    }
 
 
 
@@ -47,117 +58,110 @@
         flex-wrap: wrap;
         gap: 1.5rem;
         padding: 1.5rem;
-        justify-content: center;}
-    
+        justify-content: center;
+    }
+
 
     .product-list-item {
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        border-radius: 0.3rem;}
+        border-radius: 0.3rem;
+    }
 
     .product-list-item:hover {
         border: 1px solid #eee;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
 
     .product-list-item a {
         text-decoration: none;
-        color: #333;}
+        color: #333;
+    }
 
-    .btn-price{
+    .btn-price {
         display: flex;
         justify-content: space-between;
-        align-items: center;}
+        align-items: center;
+    }
 
     .buy-btn {
         padding: 0.5rem 1rem;
         color: #333;
         background-color: #FDC50A;
         border-radius: 0.3rem;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;}
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    }
 
-    
-    .buy-btn:hover{
-        background-color: #a881017a;}
-    
-    
+
+    .buy-btn:hover {
+        background-color: #a881017a;
+    }
+
+
     /* Main - Library */
-    
+
     .your-games-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;}
-    
+        justify-content: space-evenly;
+    }
+
     .your-games-product-container {
         width: 13rem;
         padding: 0.5rem;
         display: flex;
-        flex-wrap: wrap;}
-    
-    .mobile {display: none;}
-    
-    .library-desktop-disc h2 {
-        text-align: left;}
-    
-    
-    /* Main - Product Page */
-    
-    .product-container {
-        max-width: 45rem;
-        padding: 1rem;
-        margin: auto;}
-
-    .item-img-description {
-    display: flex;
-    gap: 2rem;
-    align-items: center;}
-
-    .item-img-description img{width: 15rem;}
-
-
-    
-    .platform-container label:hover {
-        cursor: pointer;
-        box-shadow: 3px 3px 3px;
+        flex-wrap: wrap;
     }
-    
-    
+
+    .mobile {
+        display: none;
+    }
+
+    .library-desktop-disc h2 {
+        text-align: left;
+    }
+
+
+    /* Main - Product Page */
+
+
+
+
+
+
+
+
+
     /* Main - Cart */
-    .breadcrumb {display: none;}
-    
-    
+    .breadcrumb {
+        display: none;
+    }
 
 
 
-    
-    
+
+
+
+
     /* Main - Account */
     .account-container h1 {
         width: 30rem;
         text-align: center;
     }
+
     .SoMe-account {
         padding: 1rem;
     }
-    .account-container img{max-width: 35rem; padding: 0.5rem;}
+
+    .account-container img {
+        max-width: 35rem;
+        padding: 0.5rem;
+    }
 
     /* Main - Create Account */
-    
+
     #selfie {
         border: none;
     }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

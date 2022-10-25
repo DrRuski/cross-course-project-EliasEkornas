@@ -49,7 +49,7 @@ async function getWooProducts() {
   }
 }
 
-// getWooProducts();
+getWooProducts();
 
 function buttonListener() {
   const addButton = document.querySelectorAll(".btn-price i");

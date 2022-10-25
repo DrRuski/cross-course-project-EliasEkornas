@@ -27,3 +27,7 @@ export const indexSections = document.querySelectorAll(
 );
 export const addButton = document.querySelectorAll(".btn-price a");
 export const itemAddedDisplay = document.querySelector(".item-added-display");
+
+// PRODUCT
+
+export const productContainer = document.querySelector(".product-container");
