@@ -5,11 +5,6 @@ let itemCount = 0;
 
 const url = "https://imdev.no/wp-json/wc/store/products";
 
-
-
-
-
-
 async function getWooProducts() {
   try {
     const response = await fetch(url);

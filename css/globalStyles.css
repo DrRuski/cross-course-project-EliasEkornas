@@ -216,10 +216,14 @@ h2 i {
 .product-container {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+
 }
 
 .productCard {
     display: flex;
+    background-color: #eee;
+    padding: 1rem;
     margin: auto;
 }
 
@@ -236,12 +240,46 @@ h2 i {
     padding: 0rem 1rem;
 }
 
-.categoryContainer {
-    display: flex;
-    gap: 2rem;
+.productPlatform {
+    padding: 0.4rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #25D366;
 }
 
+.categoryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
 
+.category {
+    border-radius: 1rem;
+    padding: 0.4rem 1.5rem;
+}
+
+.RTS {
+    background-color: #CBF1F5;
+}
+
+.SIM {
+    background-color: #FFE2E2;
+}
+
+.RPG {
+    background-color: #30E3CA;
+}
+
+.Sport {
+    background-color: #BDD2B6;
+}
+
+.Action {
+    background-color: #FF8787;
+}
+
+.FPS {
+    background-color: #98A8F8;
+}
 
 
 
