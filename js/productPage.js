@@ -3,6 +3,7 @@ import { getCartItems } from "./cart/cartFunctions.js";
 import { id } from "./utility/getID.js";
 
 const url = "https://imdev.no/wp-json/wc/store/products/" + id;
+let itemCount = 0;
 
 async function getWooProducts() {
   try {
@@ -14,7 +15,7 @@ async function getWooProducts() {
 
     const productImage = gameImagesArray
       .map(function (image) {
-        return `<img src="${image.src}" alt="">`;
+        return `${image.src}`;
       })
       .join("");
 
@@ -25,7 +26,7 @@ async function getWooProducts() {
       .join(" ");
 
     productContainer.innerHTML = `<div class="productCard">
-                                        <div>${productImage}</div>
+                                        <div><img src="${productImage}"></div>
                                         <div class="productDescription">
                                           <div>
                                           <h2>${games.name}</h2>
@@ -40,7 +41,7 @@ async function getWooProducts() {
                                         </div>
                                       </div>
                                       <div class="btn-price">
-                                          <i data-id="${games.id}" data-title="${games.name}" data-price="${games.prices.price}" data-platform="Playbox" data-image="${gameImagesArray.src}" class="buy-btn">Add To Cart</i>   
+                                          <i data-id="${games.id}" data-title="${games.name}" data-price="${games.prices.price}" data-platform="Playbox" data-image="${productImage}" class="productAddToCartBtn">Add To Cart</i>   
                                       </div>`;
 
     buttonListener();
@@ -53,7 +54,7 @@ async function getWooProducts() {
 }
 
 getWooProducts();
-let itemCount = 0;
+
 function buttonListener() {
   const addButton = document.querySelectorAll(".btn-price i");
 
