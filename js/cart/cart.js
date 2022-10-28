@@ -30,7 +30,7 @@ addedGames.forEach((game) => {
       <div class="item-display-container">
         <label for="price"><span>PRICE</span></label>
         <div class="item-showcase price">
-            <span>${game.price},-</span>
+            <span>$${game.price},-</span>
         </div>
       </div>
 
@@ -43,7 +43,7 @@ addedGames.forEach((game) => {
 for (let index = 0; index < addedGames.length; index++) {
   const priceOfGame = addedGames[index].price;
   let subtotalGamePrice = (gamePrice += parseInt(priceOfGame));
-  subTotal.innerHTML = subtotalGamePrice + ",- Kr";
+  subTotal.innerHTML = "$" + subtotalGamePrice + ",-";
 }
 
 purchaseBtn.onclick = function () {

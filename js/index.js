@@ -1,9 +1,12 @@
 import { indexSections, itemAddedDisplay } from "./containers/containers.js";
 import { getCartItems } from "./cart/cartFunctions.js";
 
+const key = "consumer_key=ck_5e6b369173ceaa18ffb10b43b75a7f8d7170b92d";
+const secret = "consumer_secret=cs_a9b48b0a382dac871a156a79f3c685f0a2ba0b24";
+
 let itemCount = 0;
 
-const url = "https://imdev.no/wp-json/wc/store/products";
+const url = `https://imdev.no/wp-json/wc/v3/products?${key}&${secret}`;
 
 async function getWooProducts() {
   try {
@@ -28,7 +31,7 @@ async function getWooProducts() {
                                                       </a>
                                                   </div>
                                                   <div class="btn-price">
-                                                      <i data-id="${game.id}" data-title="${game.name}" data-price="${game.prices.price}" data-platform="Playbox" data-image="${gamesImages.src}" class="buy-btn fa-solid fa-cart-plus"></i>
+                                                      <i data-id="${game.id}" data-title="${game.name}" data-price="${game.price}" data-platform="Playbox" data-image="${gamesImages.src}" class="buy-btn fa-solid fa-cart-plus"></i>
                                                       <h4>${game.price_html},-</h4>
                                                   </div>
                                             </div>`)
