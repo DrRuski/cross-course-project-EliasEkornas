@@ -6,7 +6,7 @@ This website is designed and constructed as a school project for the "Community 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+
 
 You can add some bullet points if you'd like to:
 
