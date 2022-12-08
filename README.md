@@ -15,6 +15,7 @@ In general, the website incorporates real world project development processes th
 - Vanilla HTML
 - Vanilla CSS
 - Vanilla Javascript
+- ![Rapid API](https://rapidapi.com/hub/)
 
 ## Getting Started
 
