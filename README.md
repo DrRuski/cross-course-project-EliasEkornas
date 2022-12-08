@@ -30,7 +30,7 @@ git clone git@github.com:DrRuski/Semester-Project-1-Ilya-Martchenko.git
 
 If you have any inquiries regarding my work, you may contact me anytime at:
 
-[My Portfolio](imdev.no)
+[My Portfolio](imdev.no) - Under Construction
 
 [My Twitter](https://twitter.com/IlyaMartchenko)
 
