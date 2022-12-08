@@ -23,7 +23,7 @@ In general, the website incorporates real world project development processes th
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:DrRuski/Semester-Project-1-Ilya-Martchenko.git
+git clone git@github.com:DrRuski/cross-course-project-IlyaMartchenko.git
 ```
 
 
