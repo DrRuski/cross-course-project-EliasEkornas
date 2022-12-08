@@ -15,7 +15,7 @@ In general, the website incorporates real world project development processes th
 - Vanilla HTML
 - Vanilla CSS
 - Vanilla Javascript
-- WordPress - WooCommerce Plugin
+- WordPress - Restful API (WooCommerce Plugin)
 
 ## Getting Started
 
