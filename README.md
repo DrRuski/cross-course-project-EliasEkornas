@@ -6,7 +6,7 @@
 ## Description
 
 This cross-course project is designed, constructed and has been improved upon throughout my studies @![Noroff](https://www.noroff.no/en/).
-The development of the project started the moment i enrolled into the school and with each passing course the website was been built upon and improved into what you see today (EU - 08.12.22 | US - 12.08.22).
+The development of the project started the moment i enrolled into the school and with each passing course the website was built upon and improved into what you see today (EU - 08.12.22 | US - 12.08.22).
 In general, the website incorporates real world project development processes that are focused on research based, user-centric design and development methodologies.
 
 
