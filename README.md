@@ -29,7 +29,7 @@ git clone git@github.com:DrRuski/Semester-Project-1-Ilya-Martchenko.git
 
 ## Contact
 
-If you have any inquiries regarding my work, you may contact me anytime at:
+If you have any inquiries regarding my work or potential opportunities, you may contact me anytime at:
 
 [My Portfolio](imdev.no) - Under Construction
 
