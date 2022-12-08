@@ -12,9 +12,9 @@ In general, the website incorporates real world project development processes th
 
 ## Built With
 
-- HTML
-- CSS
-- Javascript
+- Vanilla HTML
+- Vanilla CSS
+- Vanilla Javascript
 
 ## Getting Started
 
