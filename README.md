@@ -1,13 +1,13 @@
 # Cross-Course Project
 
-![](images/Cross-Course-Project.png)
+![image](images/Cross-Course-Project.png)
 
 
 ## Description
 
-This website is designed and constructed as a school project for the "Community Science Museum" which will provide valuable information to its current or future visitors. The website incorporates real world project development processes that are focused on research based, user-centric design and development.
-
-
+This cross-course project is designed, constructed and will be improved upon throughout my studies at ![Noroff](https://www.noroff.no/en/).
+The development of the project started the moment i enrolled into the school. With each passing course the website was built upon and improved into what you see today (EU - 08.12.22 | US - 12.08.22).
+In general, the website incorporates real world project development processes that are focused on research based, user-centric design and development methodologies.
 
 
 ## Built With
@@ -25,6 +25,7 @@ This website is designed and constructed as a school project for the "Community 
 ```bash
 git clone git@github.com:DrRuski/Semester-Project-1-Ilya-Martchenko.git
 ```
+
 
 ## Contact
 
