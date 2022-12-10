@@ -5,16 +5,16 @@
 
 ## Description
 
-This cross-course project is designed, developed and has been improved upon throughout my studies @![Noroff](https://www.noroff.no/en/).
-The development of the project started the moment i enrolled into the school and with each passing course the website was built upon and improved into what you see today (EU - 08.12.22 | US - 12.08.22).
-In general, the website incorporates real world project development processes that are focused on research based, user-centric design and development methodologies.
+This cross-course project has been designed, developed and improved throughout my studies @![Noroff](https://www.noroff.no/en/).
+The development of the project started when I enrolled into the school and with each passing course, the website was built upon and improved into what you see today (EU - 08.12.22 | US - 12.08.22).
+In general, the website incorporates real-world project development processes that are focused on research-based and user-centric design and development methodologies.
 
 
 ## Built With
 
-- Vanilla HTML
-- Vanilla CSS
-- Vanilla Javascript
+- HTML
+- CSS
+- Javascript
 - WordPress - Restful API (WooCommerce Plugin)
 
 ## Getting Started
