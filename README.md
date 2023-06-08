@@ -34,9 +34,9 @@ If you have any inquiries regarding my work or potential opportunities, you may 
 
 [My Portfolio](imdev.no) - Under Construction
 
-[My Twitter](https://twitter.com/IlyaMartchenko)
+[My Twitter](https://twitter.com/elias_eko)
 
-[My LinkedIn](https://www.linkedin.com/in/ilya-martchenko/)
+[My LinkedIn](https://www.linkedin.com/in/elias-ekorn%C3%A5s/)
 
 
 ## Acknowledgments
